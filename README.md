@@ -7,7 +7,7 @@ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:managem
 celery -A forum worker --loglevel=info (или celery -A forum worker -l info -P eventlet)
 
 3 терминал:
-docker run -it --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
+docker run -it --name redis -p 6379:6379 redis
 
 4 терминал:
 py manage.py runserver
