@@ -1,5 +1,9 @@
 ### Запуск проекта:
 
+Вы можете запустить проект 2 способами:
+1: через докер. Тогда docker compose up
+
+2: через py manage.py runserver:
 1 терминал:
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
 
@@ -10,7 +14,7 @@ celery -A forum worker --loglevel=info (или celery -A forum worker -l info -P
 docker run -it --name redis -p 6379:6379 redis
 
 4 терминал:
-py manage.py runserver
+py manage.py runserver --settings=forum.settings.runserver_settings
 
 Так же в директории forum содержится файл mysite_data.json с данными из моей БД
 

@@ -4,3 +4,4 @@
 *.conf text eol=lf
 *.opts text eol=lf
 *.pid text eol=lf
+:q!
