@@ -2,8 +2,12 @@
 
 Вы можете запустить проект 2 способами:
 1: через докер. Тогда docker compose up
+Предварительно рекомендую удалить Social-forum\data\db т.к лично у меня вызывает ошибку.
+После удаления данного каталога:
+docker exec django django python /app/forum/manage.py migrate
+docker exec django django python /app/forum/manage.py loaddata mysite_data.json
 
-2: через py manage.py runserver:
+2: через py manage.py runserver (перед этим понадобится создать базу данных, как указано в параметрах settings/runserver_settings):
 1 терминал:
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
 
