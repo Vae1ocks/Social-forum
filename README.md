@@ -1,29 +1,36 @@
 ### Запуск проекта:
 
 Вы можете запустить проект 2 способами:
-1: через докер. Тогда docker compose up
-Предварительно рекомендую удалить Social-forum\data\db т.к лично у меня вызывает ошибку.
+А): через докер. Тогда **docker compose up**
+
+Вероятно, произойдёт ошибка, тогда рекомендую удалить данный каталог: ***Social-forum\data\db***
 
 После удаления данного каталога:
 
-docker exec django python /app/forum/manage.py migrate
+**docker exec django python /app/forum/manage.py migrate**
 
-docker exec django python /app/forum/manage.py loaddata /app/forum/mysite_data.json
+**docker exec django python /app/forum/manage.py loaddata /app/forum/mysite_data.json**
+
+И перезагрузить контейнеры
 
 После выполнения этих шагов всё должно работать нормально
 
-2: через py manage.py runserver (перед этим понадобится создать базу данных, как указано в параметрах settings/runserver_settings):
+Б): через py manage.py runserver (перед этим понадобится создать базу данных, как указано в параметрах settings/runserver_settings):
+
 1 терминал:
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
+**docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management**
 
 2 терминал:
-celery -A forum worker --loglevel=info (или celery -A forum worker -l info -P eventlet)
+
+**celery -A forum worker --loglevel=info (или celery -A forum worker -l info -P eventlet)**
 
 3 терминал:
-docker run -it --name redis -p 6379:6379 redis
+
+**docker run -it --name redis -p 6379:6379 redis**
 
 4 терминал:
-py manage.py runserver --settings=forum.settings.runserver_settings
+
+**py manage.py runserver --settings=forum.settings.runserver_settings**
 
 Так же в директории forum содержится файл mysite_data.json с данными из моей БД
 
