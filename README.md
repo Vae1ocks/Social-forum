@@ -6,8 +6,9 @@
 
 После удаления данного каталога:
 
-docker exec django django python /app/forum/manage.py migrate
-docker exec django django python /app/forum/manage.py loaddata mysite_data.json
+docker exec django python /app/forum/manage.py migrate
+
+docker exec django python /app/forum/manage.py loaddata /app/forum/mysite_data.json
 
 После выполнения этих шагов всё должно работать нормально
 
