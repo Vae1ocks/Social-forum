@@ -1,52 +1,157 @@
 [
 {
+  "model": "account.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$ZlVvswW8KuIUqROMiSalA8$+xhYBLdCNGhnqYWo+XlgrRwlWzo/h/6FrukWjPTCk4M=",
+    "last_login": "2024-06-09T21:12:14.413Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "admin",
+    "last_name": "admin",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-13T16:20:59.208Z",
+    "avatar": "users/2024/06/10/varlamov-kloun-1.webp",
+    "about_self": "administrator",
+    "email": "admin@admin.com",
+    "user_updated": "2024-06-11T09:38:06.091Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$rkKWcZEg34O6trSn4Ib7Xh$bK2ZxKLq3QyaxbfjxYDo0r5JNVICXfnmdMyoDmz/168=",
+    "last_login": "2024-06-11T16:21:36.186Z",
+    "is_superuser": false,
+    "username": "Test1",
+    "first_name": "Test",
+    "last_name": "Test",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-05-22T17:23:05.790Z",
+    "avatar": "",
+    "about_self": "test",
+    "email": "test@test.com",
+    "user_updated": "2024-06-11T09:38:06.091Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "pk": 36,
+  "fields": {
+    "password": "!NhXC9brkvWMhTxYtkCTuNArxw2ea3VJ4hLJAVs5C",
+    "last_login": "2024-06-09T21:09:45.643Z",
+    "is_superuser": false,
+    "username": "danikblon1",
+    "first_name": "Tion",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-09T21:09:45.609Z",
+    "avatar": "",
+    "about_self": null,
+    "email": "danikblon1@gmail.com",
+    "user_updated": "2024-06-11T09:38:06.091Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "pk": 37,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$Nf1RqkNQ0ptJdnRBL6NCXy$XWjwBIxmGE1q0E9ak0VWN9EUOEVI8NJVirDV5a3oh0I=",
+    "last_login": "2024-06-10T17:12:47.756Z",
+    "is_superuser": false,
+    "username": "egrh",
+    "first_name": "wfg",
+    "last_name": "dfsdgh",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-10T17:12:40.736Z",
+    "avatar": "",
+    "about_self": "sfdf",
+    "email": "danetdanetnetdanine@gmail.com",
+    "user_updated": "2024-06-11T09:38:06.091Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "pk": 38,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$vdXEjXYjHIYNsA9Aa0JkIH$uY+g6yDPi2NjCbU+5su1dcyBbjim3SV/8reugB0PlsY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "afsdfad",
+    "first_name": "safdsafd",
+    "last_name": "fdasadf",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-11T16:21:05.991Z",
+    "avatar": "",
+    "about_self": "afdsadfs",
+    "email": "adfaf@gmail.com",
+    "user_updated": "2024-06-11T16:21:06.208Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "admin.logentry",
   "pk": 1,
   "fields": {
-    "action_time": "2024-05-01T10:29:42.485Z",
+    "action_time": "2024-05-13T16:26:44.191Z",
     "user": 1,
     "content_type": 7,
     "object_id": "1",
-    "object_repr": "Lalala 1",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 2,
-  "fields": {
-    "action_time": "2024-05-01T10:31:00.096Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "1",
-    "object_repr": "Lalala 1",
-    "action_flag": 2,
-    "change_message": "[{\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 3,
-  "fields": {
-    "action_time": "2024-05-01T12:56:09.172Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "2",
-    "object_repr": "fsdfsf",
+    "object_repr": "Some article",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}, {\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}]"
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 4,
+  "pk": 2,
   "fields": {
-    "action_time": "2024-05-01T14:18:08.582Z",
+    "action_time": "2024-05-13T16:28:04.077Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "**Тут маркдаун**",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-05-13T16:28:15.567Z",
     "user": 1,
     "content_type": 7,
     "object_id": "3",
-    "object_repr": "gfsdgfsgfdsgsdgfsg",
+    "object_repr": "adsfasf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-05-13T16:28:27.740Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "ttttttttt",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -55,24 +160,24 @@
   "model": "admin.logentry",
   "pk": 5,
   "fields": {
-    "action_time": "2024-05-01T14:18:24.463Z",
+    "action_time": "2024-05-13T16:28:50.197Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "4",
-    "object_repr": "sfdgsdgsdgsdgsgsfgsdgsfgsgsgsdgsdgsdgsdgsdgsdgsdg",
+    "object_id": "5",
+    "object_repr": "**LALALA**",
     "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}, {\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}]"
   }
 },
 {
   "model": "admin.logentry",
   "pk": 6,
   "fields": {
-    "action_time": "2024-05-01T14:18:34.691Z",
+    "action_time": "2024-05-13T16:29:03.707Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "5",
-    "object_repr": "32424234",
+    "object_id": "6",
+    "object_repr": "***JFKADSLKJFKDS***",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -81,11 +186,11 @@
   "model": "admin.logentry",
   "pk": 7,
   "fields": {
-    "action_time": "2024-05-01T14:18:40.326Z",
+    "action_time": "2024-05-13T16:29:11.921Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "6",
-    "object_repr": "253452354235",
+    "object_id": "7",
+    "object_repr": "dasfsfsdf",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -94,293 +199,150 @@
   "model": "admin.logentry",
   "pk": 8,
   "fields": {
-    "action_time": "2024-05-01T14:18:47.530Z",
+    "action_time": "2024-05-13T16:29:42.944Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "7",
-    "object_repr": "1c9243c8b127yc35",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_id": "6",
+    "object_repr": "JFKADSLKJFKDS",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
   }
 },
 {
   "model": "admin.logentry",
   "pk": 9,
   "fields": {
-    "action_time": "2024-05-01T14:24:30.083Z",
+    "action_time": "2024-05-13T16:29:57.839Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "8",
-    "object_repr": "5t43g43g34g",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_id": "2",
+    "object_repr": "Тут маркдаун",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Body\"]}}]"
   }
 },
 {
   "model": "admin.logentry",
   "pk": 10,
   "fields": {
-    "action_time": "2024-05-01T14:24:36.352Z",
+    "action_time": "2024-05-13T16:30:08.698Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "9",
-    "object_repr": "gt3rg",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_id": "5",
+    "object_repr": "LALALA",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Body\"]}}]"
   }
 },
 {
   "model": "admin.logentry",
   "pk": 11,
   "fields": {
-    "action_time": "2024-05-02T20:00:29.452Z",
+    "action_time": "2024-05-14T10:01:31.546Z",
     "user": 1,
-    "content_type": 9,
-    "object_id": "1",
-    "object_repr": "Smart",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tagged item\", \"object\": \"Lalala 1 tagged with Smart\"}}, {\"added\": {\"name\": \"tagged item\", \"object\": \"fsdfsf tagged with Smart\"}}]"
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "sdfd",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
   "pk": 12,
   "fields": {
-    "action_time": "2024-05-03T16:19:02.303Z",
+    "action_time": "2024-05-14T10:01:31.549Z",
     "user": 1,
-    "content_type": 7,
-    "object_id": "8",
-    "object_repr": "5t43g43g34g",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "Test",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
   "pk": 13,
   "fields": {
-    "action_time": "2024-05-03T16:19:12.793Z",
+    "action_time": "2024-05-15T14:52:45.296Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "6",
-    "object_repr": "253452354235",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    "object_id": "11",
+    "object_repr": "вапаапавп",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
   "pk": 14,
   "fields": {
-    "action_time": "2024-05-03T16:26:55.827Z",
+    "action_time": "2024-05-15T14:52:45.306Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
-    "object_repr": "sdfsfd",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_repr": "вапаапавп",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
   "pk": 15,
   "fields": {
-    "action_time": "2024-05-06T11:19:47.564Z",
+    "action_time": "2024-05-15T14:55:08.986Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "11",
-    "object_repr": "<p> </p> <class> <body> </body>",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_id": "13",
+    "object_repr": "dfs",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
   "pk": 16,
   "fields": {
-    "action_time": "2024-05-06T11:40:24.297Z",
+    "action_time": "2024-05-15T14:55:09.063Z",
     "user": 1,
     "content_type": 7,
     "object_id": "12",
-    "object_repr": "adsfasf",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_repr": "dfs",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
   "pk": 17,
   "fields": {
-    "action_time": "2024-05-06T11:40:47.236Z",
+    "action_time": "2024-05-15T14:55:09.066Z",
     "user": 1,
     "content_type": 7,
-    "object_id": "12",
-    "object_repr": "adsfasf",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+    "object_id": "9",
+    "object_repr": "ddd",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
   "pk": 18,
   "fields": {
-    "action_time": "2024-05-06T11:42:11.465Z",
+    "action_time": "2024-05-26T13:13:22.597Z",
     "user": 1,
-    "content_type": 7,
-    "object_id": "12",
-    "object_repr": "adsfasf",
-    "action_flag": 3,
-    "change_message": ""
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "localhost",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
   }
 },
 {
   "model": "admin.logentry",
   "pk": 19,
   "fields": {
-    "action_time": "2024-05-06T11:42:11.483Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "10",
-    "object_repr": "sdfsfd",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 20,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.500Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "9",
-    "object_repr": "gt3rg",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 21,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.513Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "8",
-    "object_repr": "5t43g43g34g",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 22,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.527Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "7",
-    "object_repr": "1c9243c8b127yc35",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 23,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.543Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "6",
-    "object_repr": "253452354235",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 24,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.557Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "5",
-    "object_repr": "32424234",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 25,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.571Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "4",
-    "object_repr": "sfdgsdgsdgsdgsgsfgsdgsfgsgsgsdgsdgsdgsdgsdgsdgsdg",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 26,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.585Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "3",
-    "object_repr": "gfsdgfsgfdsgsdgfsg",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 27,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.599Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "2",
-    "object_repr": "fsdfsf",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 28,
-  "fields": {
-    "action_time": "2024-05-06T11:42:11.615Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "1",
-    "object_repr": "Lalala 1",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 29,
-  "fields": {
-    "action_time": "2024-05-06T11:43:15.260Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "13",
-    "object_repr": "Markdown",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"was commented by admin\"}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 30,
-  "fields": {
-    "action_time": "2024-05-07T14:59:43.582Z",
+    "action_time": "2024-05-26T13:13:42.290Z",
     "user": 1,
     "content_type": 11,
     "object_id": "1",
@@ -390,147 +352,1902 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-05-30T11:12:51.016Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "23",
+    "object_repr": "21344124",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-05-30T11:12:51.029Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "DSFFDSFSF",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-05-30T11:13:06.287Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "sdfsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-05-30T12:38:44.938Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "24",
+    "object_repr": "New Article",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\", \"Status\", \"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-05-30T13:30:49.895Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "На удалериен",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-05-30T13:46:48.862Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "авыаыаыва",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-05-30T13:46:48.866Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "авыаыаыва",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-05-30T21:40:43.755Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "42",
+    "object_repr": "123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-05-30T21:53:22.068Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "45",
+    "object_repr": "123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-05-30T21:53:22.071Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "44",
+    "object_repr": "321",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-05-30T21:53:22.072Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "43",
+    "object_repr": "123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-05-31T10:51:11.705Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "54",
+    "object_repr": "rfsdfdsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-05-31T10:51:11.708Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "53",
+    "object_repr": "22233332",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-05-31T10:51:11.709Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "52",
+    "object_repr": "22232",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-05-31T10:51:11.709Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "51",
+    "object_repr": "222",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-05-31T10:51:11.710Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "50",
+    "object_repr": "111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.562Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "81",
+    "object_repr": "fsdsdfsdffsd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.565Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "80",
+    "object_repr": "fdsfds",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.566Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "79",
+    "object_repr": "fddfdf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.567Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "78",
+    "object_repr": "пидорас ебаныйffffsfdfdsdffdfddfdffddffdfdfd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.568Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "77",
+    "object_repr": "пидорас ебаныйffffsfdfdsdffdfddfdffddffdfdfd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.569Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "76",
+    "object_repr": "пидорас ебаныйffffsfdfdsdffdfddfdffddffdfdfd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.570Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "72",
+    "object_repr": "пидорас ебаныйfffffgffgf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.571Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "69",
+    "object_repr": "пидорас ебаный",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.572Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "68",
+    "object_repr": "gfdgdfg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.573Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "67",
+    "object_repr": "gfdgdfg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.574Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "66",
+    "object_repr": "fsfdsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.575Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "65",
+    "object_repr": "fsfdsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.576Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "64",
+    "object_repr": "fsfdsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.576Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "63",
+    "object_repr": "fsfdsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.577Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "62",
+    "object_repr": "fsfdsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.578Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "75",
+    "object_repr": "пидорас ебаныйffffsfdfdsdffdfddfdffddffdfdfd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.579Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "74",
+    "object_repr": "пидорас ебаныйffffsfdfds",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.579Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "73",
+    "object_repr": "пидорас ебаныйffff",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2024-06-01T21:23:00.579Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "61",
+    "object_repr": "njknjjn",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2024-06-03T08:16:18.273Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "Redis",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.195Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "6",
+    "object_repr": "antondobranickij",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.207Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "8",
+    "object_repr": "danikblon",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.208Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "7",
+    "object_repr": "dlabravla931",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.209Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "19",
+    "object_repr": "EMAIL_TEST",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.209Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "18",
+    "object_repr": "playerokmy1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.210Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "16",
+    "object_repr": "shell",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.210Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "10",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.211Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "4",
+    "object_repr": "Test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.211Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "17",
+    "object_repr": "Test2222222",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2024-06-03T13:24:53.211Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "9",
+    "object_repr": "ttttest",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2024-06-03T17:11:07.123Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "90",
+    "object_repr": "11111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2024-06-03T17:11:07.135Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "89",
+    "object_repr": "1111111111111111111111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2024-06-03T17:11:07.137Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "87",
+    "object_repr": "11111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2024-06-03T17:11:07.139Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "86",
+    "object_repr": "11111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2024-06-03T17:11:07.140Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "85",
+    "object_repr": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2024-06-03T17:11:07.141Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "84",
+    "object_repr": "111111111111111111111111111111111111111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2024-06-03T17:11:07.142Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "83",
+    "object_repr": "11111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.171Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "22",
+    "object_repr": "adfgsda",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.183Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "21",
+    "object_repr": "afgd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.184Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "30",
+    "object_repr": "asdfasdf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.186Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "29",
+    "object_repr": "asdfsadfdas",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.186Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "28",
+    "object_repr": "danetdanetnetdanine",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.187Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "27",
+    "object_repr": "KJFSDKADJF",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.187Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "23",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2024-06-05T07:49:44.188Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "20",
+    "object_repr": "TEST_EMAIL",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2024-06-06T11:38:19.422Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "31",
+    "object_repr": "1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2024-06-07T18:39:44.243Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "32",
+    "object_repr": "aaaaa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2024-06-07T18:39:44.254Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "35",
+    "object_repr": "fdasgsgf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2024-06-07T18:39:44.256Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "33",
+    "object_repr": "gfsd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2024-06-07T18:39:44.257Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "34",
+    "object_repr": "jfsda",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.921Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "99",
+    "object_repr": "TEST_EDIT",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.924Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "92",
+    "object_repr": "adfafdaf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.925Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "91",
+    "object_repr": "afdfsafsadf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.926Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "88",
+    "object_repr": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.927Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "82",
+    "object_repr": "1231231231232",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.928Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "60",
+    "object_repr": "musician",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.928Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "59",
+    "object_repr": "musicality",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.929Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "58",
+    "object_repr": "music",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.931Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "57",
+    "object_repr": "Final Test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.931Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "56",
+    "object_repr": "111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.932Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "55",
+    "object_repr": "123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.932Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "47",
+    "object_repr": "dfsfdsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.933Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "46",
+    "object_repr": "sfdsdf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.933Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "41",
+    "object_repr": "TEST",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.934Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "40",
+    "object_repr": "авыаыаыва",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.936Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "fdsfsdfs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.937Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "33",
+    "object_repr": "dfgdgdfgf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.937Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "jhkl",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.937Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "gd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.938Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "sfdfsfsd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.939Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "ddd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.939Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "dsf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.940Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "dasfsfsdf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.940Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "JFKADSLKJFKDS",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.940Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "LALALA",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.942Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "ttttttttt",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.942Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "adsfasf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.943Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Тут маркдаун",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2024-06-07T18:40:43.943Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Some article",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2024-06-07T18:43:13.272Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "1111111",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2024-06-07T18:43:13.275Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "administrator",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2024-06-07T18:43:13.276Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "afd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2024-06-07T18:43:13.277Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "dddddd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2024-06-07T18:43:13.278Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "sdfs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2024-06-07T18:44:06.420Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "news",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2024-06-07T18:44:14.838Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "programming",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2024-06-07T18:51:18.999Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "design",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2024-06-07T18:52:19.700Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "management",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2024-06-07T19:19:10.674Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "os",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2024-06-08T08:52:49.059Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "120",
+    "object_repr": "sdf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2024-06-08T08:52:49.070Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "119",
+    "object_repr": "fds",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2024-06-08T08:52:49.072Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "118",
+    "object_repr": "рп",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2024-06-08T08:53:04.456Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "117",
+    "object_repr": "Как быстро написать API на FastAPI с валидацией и базой данных",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2024-06-08T08:53:18.922Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "116",
+    "object_repr": "Что же такое Django?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2024-06-08T09:39:57.876Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "123",
+    "object_repr": "фаыв",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2024-06-08T09:39:57.879Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "122",
+    "object_repr": "фавы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2024-06-08T09:39:57.880Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "121",
+    "object_repr": "фавыафыва",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2024-06-08T09:46:20.689Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "124",
+    "object_repr": "апывп",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2024-06-09T11:24:20.222Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "129",
+    "object_repr": "fr",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2024-06-09T11:24:20.232Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "128",
+    "object_repr": "df",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2024-06-09T11:24:20.233Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "127",
+    "object_repr": "df",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2024-06-09T11:24:20.233Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "126",
+    "object_repr": "а",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2024-06-09T11:24:20.234Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "125",
+    "object_repr": "sdafcxvgcb",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2024-06-09T11:24:36.043Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "python",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2024-06-09T11:24:39.985Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2024-06-09T11:24:47.762Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "fast-api",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2024-06-09T11:25:02.538Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "16",
+    "object_repr": "1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2024-06-09T11:25:02.541Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "17",
+    "object_repr": "10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2024-06-09T11:25:02.542Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2024-06-09T11:25:02.543Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "14",
+    "object_repr": "8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2024-06-09T11:25:02.544Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2024-06-09T11:43:14.863Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "117",
+    "object_repr": "Как быстро написать API на FastAPI с валидацией и базой данных",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2024-06-09T21:56:51.229Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "142",
+    "object_repr": "авфы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2024-06-09T21:56:51.236Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "141",
+    "object_repr": "афвы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2024-06-09T21:56:51.237Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "140",
+    "object_repr": "авы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2024-06-09T21:56:51.238Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "139",
+    "object_repr": "афвы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2024-06-09T21:56:51.239Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "138",
+    "object_repr": "авы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2024-06-09T21:56:51.240Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "137",
+    "object_repr": "авы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2024-06-09T22:14:04.171Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "117",
+    "object_repr": "Как быстро написать API на FastAPI с валидацией и базой данных",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"comment\", \"object\": \"\\u0414\\u0436\\u0430\\u043d\\u0433\\u043e \\u043a\\u0440\\u0443\\u0447\\u0435\"}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
-    "name": "Can add log entry",
+    "name": "Can add user",
     "content_type": 1,
-    "codename": "add_logentry"
+    "codename": "add_user"
   }
 },
 {
   "model": "auth.permission",
   "pk": 2,
   "fields": {
-    "name": "Can change log entry",
+    "name": "Can change user",
     "content_type": 1,
-    "codename": "change_logentry"
+    "codename": "change_user"
   }
 },
 {
   "model": "auth.permission",
   "pk": 3,
   "fields": {
-    "name": "Can delete log entry",
+    "name": "Can delete user",
     "content_type": 1,
-    "codename": "delete_logentry"
+    "codename": "delete_user"
   }
 },
 {
   "model": "auth.permission",
   "pk": 4,
   "fields": {
-    "name": "Can view log entry",
+    "name": "Can view user",
     "content_type": 1,
-    "codename": "view_logentry"
+    "codename": "view_user"
   }
 },
 {
   "model": "auth.permission",
   "pk": 5,
   "fields": {
-    "name": "Can add permission",
+    "name": "Can add log entry",
     "content_type": 2,
-    "codename": "add_permission"
+    "codename": "add_logentry"
   }
 },
 {
   "model": "auth.permission",
   "pk": 6,
   "fields": {
-    "name": "Can change permission",
+    "name": "Can change log entry",
     "content_type": 2,
-    "codename": "change_permission"
+    "codename": "change_logentry"
   }
 },
 {
   "model": "auth.permission",
   "pk": 7,
   "fields": {
-    "name": "Can delete permission",
+    "name": "Can delete log entry",
     "content_type": 2,
-    "codename": "delete_permission"
+    "codename": "delete_logentry"
   }
 },
 {
   "model": "auth.permission",
   "pk": 8,
   "fields": {
-    "name": "Can view permission",
+    "name": "Can view log entry",
     "content_type": 2,
-    "codename": "view_permission"
+    "codename": "view_logentry"
   }
 },
 {
   "model": "auth.permission",
   "pk": 9,
   "fields": {
-    "name": "Can add group",
+    "name": "Can add permission",
     "content_type": 3,
-    "codename": "add_group"
+    "codename": "add_permission"
   }
 },
 {
   "model": "auth.permission",
   "pk": 10,
   "fields": {
-    "name": "Can change group",
+    "name": "Can change permission",
     "content_type": 3,
-    "codename": "change_group"
+    "codename": "change_permission"
   }
 },
 {
   "model": "auth.permission",
   "pk": 11,
   "fields": {
-    "name": "Can delete group",
+    "name": "Can delete permission",
     "content_type": 3,
-    "codename": "delete_group"
+    "codename": "delete_permission"
   }
 },
 {
   "model": "auth.permission",
   "pk": 12,
   "fields": {
-    "name": "Can view group",
+    "name": "Can view permission",
     "content_type": 3,
-    "codename": "view_group"
+    "codename": "view_permission"
   }
 },
 {
   "model": "auth.permission",
   "pk": 13,
   "fields": {
-    "name": "Can add user",
+    "name": "Can add group",
     "content_type": 4,
-    "codename": "add_user"
+    "codename": "add_group"
   }
 },
 {
   "model": "auth.permission",
   "pk": 14,
   "fields": {
-    "name": "Can change user",
+    "name": "Can change group",
     "content_type": 4,
-    "codename": "change_user"
+    "codename": "change_group"
   }
 },
 {
   "model": "auth.permission",
   "pk": 15,
   "fields": {
-    "name": "Can delete user",
+    "name": "Can delete group",
     "content_type": 4,
-    "codename": "delete_user"
+    "codename": "delete_group"
   }
 },
 {
   "model": "auth.permission",
   "pk": 16,
   "fields": {
-    "name": "Can view user",
+    "name": "Can view group",
     "content_type": 4,
-    "codename": "view_user"
+    "codename": "view_group"
   }
 },
 {
@@ -609,36 +2326,36 @@
   "model": "auth.permission",
   "pk": 25,
   "fields": {
-    "name": "Can add post",
+    "name": "Can add article",
     "content_type": 7,
-    "codename": "add_post"
+    "codename": "add_article"
   }
 },
 {
   "model": "auth.permission",
   "pk": 26,
   "fields": {
-    "name": "Can change post",
+    "name": "Can change article",
     "content_type": 7,
-    "codename": "change_post"
+    "codename": "change_article"
   }
 },
 {
   "model": "auth.permission",
   "pk": 27,
   "fields": {
-    "name": "Can delete post",
+    "name": "Can delete article",
     "content_type": 7,
-    "codename": "delete_post"
+    "codename": "delete_article"
   }
 },
 {
   "model": "auth.permission",
   "pk": 28,
   "fields": {
-    "name": "Can view post",
+    "name": "Can view article",
     "content_type": 7,
-    "codename": "view_post"
+    "codename": "view_article"
   }
 },
 {
@@ -753,42 +2470,6 @@
   "model": "auth.permission",
   "pk": 41,
   "fields": {
-    "name": "Can add article",
-    "content_type": 7,
-    "codename": "add_article"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 42,
-  "fields": {
-    "name": "Can change article",
-    "content_type": 7,
-    "codename": "change_article"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 43,
-  "fields": {
-    "name": "Can delete article",
-    "content_type": 7,
-    "codename": "delete_article"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 44,
-  "fields": {
-    "name": "Can view article",
-    "content_type": 7,
-    "codename": "view_article"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 45,
-  "fields": {
     "name": "Can add site",
     "content_type": 11,
     "codename": "add_site"
@@ -796,7 +2477,7 @@
 },
 {
   "model": "auth.permission",
-  "pk": 46,
+  "pk": 42,
   "fields": {
     "name": "Can change site",
     "content_type": 11,
@@ -805,7 +2486,7 @@
 },
 {
   "model": "auth.permission",
-  "pk": 47,
+  "pk": 43,
   "fields": {
     "name": "Can delete site",
     "content_type": 11,
@@ -814,7 +2495,7 @@
 },
 {
   "model": "auth.permission",
-  "pk": 48,
+  "pk": 44,
   "fields": {
     "name": "Can view site",
     "content_type": 11,
@@ -822,26 +2503,349 @@
   }
 },
 {
-  "model": "auth.user",
-  "pk": 1,
+  "model": "auth.permission",
+  "pk": 45,
   "fields": {
-    "password": "pbkdf2_sha256$390000$JKjs1UwtGSxBOZ6dLUAiM5$WaQE3fZ8y0ieRxayULQyYx/bpms8ZDCNimc+YXqLoYw=",
-    "last_login": "2024-05-01T10:29:16.749Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "admin@admin.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2024-05-01T10:28:29.320Z",
-    "groups": [],
-    "user_permissions": []
+    "name": "Can add association",
+    "content_type": 12,
+    "codename": "add_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change association",
+    "content_type": 12,
+    "codename": "change_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete association",
+    "content_type": 12,
+    "codename": "delete_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view association",
+    "content_type": 12,
+    "codename": "view_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add code",
+    "content_type": 13,
+    "codename": "add_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change code",
+    "content_type": 13,
+    "codename": "change_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete code",
+    "content_type": 13,
+    "codename": "delete_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view code",
+    "content_type": 13,
+    "codename": "view_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add nonce",
+    "content_type": 14,
+    "codename": "add_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change nonce",
+    "content_type": 14,
+    "codename": "change_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete nonce",
+    "content_type": 14,
+    "codename": "delete_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view nonce",
+    "content_type": 14,
+    "codename": "view_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add user social auth",
+    "content_type": 15,
+    "codename": "add_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change user social auth",
+    "content_type": 15,
+    "codename": "change_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete user social auth",
+    "content_type": 15,
+    "codename": "delete_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view user social auth",
+    "content_type": 15,
+    "codename": "view_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add partial",
+    "content_type": 16,
+    "codename": "add_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change partial",
+    "content_type": 16,
+    "codename": "change_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete partial",
+    "content_type": 16,
+    "codename": "delete_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view partial",
+    "content_type": 16,
+    "codename": "view_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add Redis Server",
+    "content_type": 17,
+    "codename": "add_redisserver"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change Redis Server",
+    "content_type": 17,
+    "codename": "change_redisserver"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete Redis Server",
+    "content_type": 17,
+    "codename": "delete_redisserver"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view Redis Server",
+    "content_type": 17,
+    "codename": "view_redisserver"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can inspect redis servers",
+    "content_type": 17,
+    "codename": "can_inspect"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can add source",
+    "content_type": 18,
+    "codename": "add_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can change source",
+    "content_type": 18,
+    "codename": "change_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can delete source",
+    "content_type": 18,
+    "codename": "delete_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can view source",
+    "content_type": 18,
+    "codename": "view_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can add thumbnail",
+    "content_type": 19,
+    "codename": "add_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can change thumbnail",
+    "content_type": 19,
+    "codename": "change_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can delete thumbnail",
+    "content_type": 19,
+    "codename": "delete_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can view thumbnail",
+    "content_type": 19,
+    "codename": "view_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can add thumbnail dimensions",
+    "content_type": 20,
+    "codename": "add_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can change thumbnail dimensions",
+    "content_type": 20,
+    "codename": "change_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can delete thumbnail dimensions",
+    "content_type": 20,
+    "codename": "delete_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can view thumbnail dimensions",
+    "content_type": 20,
+    "codename": "view_thumbnaildimensions"
   }
 },
 {
   "model": "contenttypes.contenttype",
   "pk": 1,
+  "fields": {
+    "app_label": "account",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
   "fields": {
     "app_label": "admin",
     "model": "logentry"
@@ -849,7 +2853,7 @@
 },
 {
   "model": "contenttypes.contenttype",
-  "pk": 2,
+  "pk": 3,
   "fields": {
     "app_label": "auth",
     "model": "permission"
@@ -857,18 +2861,10 @@
 },
 {
   "model": "contenttypes.contenttype",
-  "pk": 3,
-  "fields": {
-    "app_label": "auth",
-    "model": "group"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
   "pk": 4,
   "fields": {
     "app_label": "auth",
-    "model": "user"
+    "model": "group"
   }
 },
 {
@@ -928,72 +2924,666 @@
   }
 },
 {
-  "model": "sessions.session",
-  "pk": "hir99269v0v67x6utehtis79pu6lrfb1",
+  "model": "contenttypes.contenttype",
+  "pk": 12,
   "fields": {
-    "session_data": ".eJxVjDsOwyAQRO9CHSEWI8OmTJ8zoF0-wUkEkrErK3ePLblIpKnmvZlNeFqX4teeZj9FcRUgLr8dU3ileoD4pPpoMrS6zBPLQ5En7fLeYnrfTvfvoFAv-9qEAFZHcC6jS24PqgENRAsqK2ZwSoEe2CocR0Ikzpo4JuQAjMaJzxfGhTd8:1s27DA:M33iWdexiyjjvg9Opmk8wtgVf1WRsBaHQeNO26JMckM",
-    "expire_date": "2024-05-15T10:29:16.755Z"
+    "app_label": "social_django",
+    "model": "association"
   }
 },
 {
-  "model": "blog.article",
-  "pk": 11,
-  "fields": {
-    "title": "<p> </p> <class> <body> </body>",
-    "slug": "p-p-class-body-body",
-    "body": "adfaf",
-    "created": "2024-05-06T11:19:47.557Z",
-    "updated": "2024-05-06T11:19:47.557Z",
-    "publish": "2024-05-06T11:18:37Z",
-    "author": 1,
-    "status": "PB"
-  }
-},
-{
-  "model": "blog.article",
+  "model": "contenttypes.contenttype",
   "pk": 13,
   "fields": {
-    "title": "Markdown",
-    "slug": "markdown",
-    "body": "This is a post formatted with markdown\r\n--------------------------------------\r\n*This is emphasized* and **this is more emphasized**.\r\nHere is a list:\r\n* One\r\n* Two\r\n* Three\r\nAnd a [link to the Django website](https://www.djangoproject.com/).",
-    "created": "2024-05-06T11:43:15.252Z",
-    "updated": "2024-05-06T11:43:15.252Z",
-    "publish": "2024-05-06T11:42:14Z",
+    "app_label": "social_django",
+    "model": "code"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "social_django",
+    "model": "nonce"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "social_django",
+    "model": "usersocialauth"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "social_django",
+    "model": "partial"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "redisboard",
+    "model": "redisserver"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "source"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "thumbnail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "thumbnaildimensions"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0apdvugvfdjr7luwy7n91sh34cqyuvnz",
+  "fields": {
+    "session_data": ".eJxdkLEKwjAQht8ls5akadLo1klRUXTqFtLrNS2GRk0EQXx3W3VQp4P_-P7vuDux3luHU2-usU11iCYimZNiW0Z3staeynCTy7M49LDxUK7tarlPQZIJ0SOhrwEvuqsH5C-rDByxHxfBQ2ecBn_B5JOG5K1NFq-xK0b5L9-a0A6wqRnmmUCeq0aqTNWM8kqaLG9oDkpUmYQGKFOcs5kStJZSIVdCsLThFCkdSj_-V7UzIWrnbdd_HfjzAvJ4Aum8XCE:1sAww9:-hZedXYJHvQMOxsIp6XjhFNzj4lk9v7NkALBhfsHLVU",
+    "expire_date": "2024-06-08T19:20:13.321Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1hinmz90cvtrpltr2ytg4hy4slrz0hrt",
+  "fields": {
+    "session_data": ".eJxVjEsKwzAMRO-idegBvOohujdqogSD_IkkN5SQu1eBlpLdvHnD7CC0JDVBS7XECQ0h7IAvDwKhdOYBupIUzAQBHqQGA8xJ1OK3c2a8IGVM7NF8fV9OuI01u8Bn7RaVeP59N1Tdqky-XttWKUm3N_z7KNQI7aqP4wNI00FL:1sE8SK:4Ykg2JSQ_pO0yU0naiudQWdgmIoT47tiCR4gomVOVKM",
+    "expire_date": "2024-06-17T14:14:36.045Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "20s7brklzgytehi2rjgaph1z0lnp7mgr",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHlMQgu3fcbyMwAUjU0Ke3K-O_apAvd3nPOfYmI21rj1vMSpyQuAsTpdyPkR247SHdst1ny3NZlIrkr8qBdjnPKz-vh_h1U7PVbc3BYyIHVfnD2zJiUIUSPwUMA0AQ-BWMHziqRD6SCN6hNsQZKYQDx_gDgmze1:1sBJiY:fsm6ExNUj7YPDfzxe7wTDk_OvwTl0bUrHQ9pLFOWhp8",
+    "expire_date": "2024-06-09T19:39:42.066Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2ei5xwxd9c1xpggxvqk8jdgalcyhq9ec",
+  "fields": {
+    "session_data": ".eJxVzEEOwjAMBMC_-FzxgJ74SbQldkhJm8pO4VD177gqEnCwZM2udiPllK0pWq5ziGigfiM8_VHq57WUjlZjnTEx9TSKRVBHktVa-CA0iTkWfG0Qk2Tufh7xhFyOqqRo8JFrOuRyq5OnGOragnGRc41lsOi-wOxVNR5a7BFHuacfDsoLo_2l-_4GB6xK9Q:1sFeCC:OIIZJb_KNoD711zi3Y-4XumtACnOC9TksRTmNjsOUc0",
+    "expire_date": "2024-06-21T18:20:12.184Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3hpcjhsp2oj8lckpmvo2gmh2fl04zztp",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sFfBF:MTu-BXNutm7YsMsMmcu3Is-a3yqC7UU-FPKecnmcO-s",
+    "expire_date": "2024-06-21T19:23:17.352Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3kew9bxtf84e318ji0fwe5hypfi4wngs",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGll2_Isp6TmDtd7d4ABypDipEHcHSymgfTPzXiLBvpW0N17TTOIstDj9bhnwwbUDukO9LRKXuq1zll2RB23yuhA_L4f7d1CglV6DNVGxMyPjFCkHUtlEFwiVU5q1D5GDmYwaLFgcVYhf6jkPrDM6j-L9AeIIN6k:1sD0cB:ffOEWZdP4MqRccDmLxANUpCm-ef9WS7CkYSww8A8FBw",
+    "expire_date": "2024-06-14T11:40:07.723Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3qmwbrdhgz7bdj1p25f2qpzqwk0jn121",
+  "fields": {
+    "session_data": "e30:1sEuUk:PwJUngCgbU1YLjvytvZmHVKH72KekC_8kzLF0JjEzJE",
+    "expire_date": "2024-06-19T17:32:18.515Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6ddbf0y6b9t2qpjspcigg3c1x8zmb37c",
+  "fields": {
+    "session_data": "eyJnb29nbGUtb2F1dGgyX3N0YXRlIjoiaEhMYzZUVFBwSlNhSk15YnNtbmRMdFIwSGs0dHRzRVUifQ:1sAwbp:qU8VC-pfsYJrOnsHmU5ycfKEeK-gRC4kMSw7QynQSuU",
+    "expire_date": "2024-06-08T18:59:13.996Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9ky6d4owy3oqpg7xzh14p64apahvaz3k",
+  "fields": {
+    "session_data": ".eJxVjjFvAjEMhf-L52t1oqXDTYWOqFC6VEzRg8QhkLtA7OsNiP9OTmWggyW_75Otd6HsfBDN0JA6Y6Gg5kL4LUumputjrKgXlzu0jhoCe0sVccii5s4EDGGB5WIiHoRllsJcixBLZmELfvdjfN6ltihsU69GXOTxeTn4m2JOEBlStiOPcrQH3vsHbLI7Oeg_e63Ip-Sje0rodT8xotCxyFv4WHxuf4b5pK7P57aW2Wb1lV_Wi-X3-nU6gK43JRdbuQ:1sEAZM:Dff0kTcfTCQSlVctjubzgo-tfsDR_GJ4_RstX9QIMS0",
+    "expire_date": "2024-06-17T16:30:00.105Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "aa2gefwg9oo4npoujb3jk8orc6hyz1te",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmOEBduvcMZDoDUjU0Ke3KeHfbpAvdvvf-f6tI61Li2tIcR1EXher0ywbiZ6q7kAfV-6R5qss8DnpP9GGbvk2SXtej_Tso1Mq27jmIBYtA2EHmbAJmCYbcBoPtBF3uExub3BmdMeyBAoFwBvDghdTnC83mN2Q:1sBJZz:M4r2aPAPpErA2IA3uViZtIn1KqH2Otjt0N2aturJZuc",
+    "expire_date": "2024-06-09T19:30:51.828Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ahqae5r2gvbudiqfyiz87sjjaynufvlx",
+  "fields": {
+    "session_data": ".eJxVyksOgzAMRdG9eIy6AEbdSeTWnwQCQXZoB4i9NyCktjO_c72BsSavhjWVORBWhH4DfLXDoJ_XnDtYnW3GiaEHIXR1FehAknkNl7uQxiE2zvhVFYpDM54w5XPHYbzrsW7PMrWCj7LW4JylZXLR839B93cxaoZOB475h4Pxwlj_6r5_AJrMR6Q:1sFeMy:XPaq5mSQBoMdyg1t9fYEjuIHtLci7zpvJhoqSBg_M8E",
+    "expire_date": "2024-06-21T18:31:20.868Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b91z82vdl5sbre3jup5i1s62v93atw84",
+  "fields": {
+    "session_data": "eyJnb29nbGUtb2F1dGgyX3N0YXRlIjoiN3ZjT3FkUk9HaVh6bG5GRFpjYklRQVRLV0dlWWN0WG0ifQ:1sEAZ5:4-2ESe--rzeELJ3HMYS5l2t1ZjNvzfaALU6Op7MMTII",
+    "expire_date": "2024-06-17T16:29:43.847Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bqy9syxk2og9l5wlkngmqmssr7wunkku",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV81NiI6dHJ1ZX0:1sDpmu:OQAun1ioQjSF6QCRevMJNKTikPG4pV5jGbyUKIKIQD0",
+    "expire_date": "2024-06-16T18:18:36.176Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bxpthfms0bdrau2n0mb49fswgm6qkw0k",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV81NyI6dHJ1ZX0:1sDpnE:4fZ--3ZtUsf592qZWrCEIWMsv4uDyNMbXZ-9uxZonTg",
+    "expire_date": "2024-06-16T18:18:56.320Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ccr784b9xq9ivofr13em2y46927wlo4k",
+  "fields": {
+    "session_data": ".eJxVyz0OwjAMhuG7eK44QCZuEhlipyn5qewEhqp3x5EYyubveeUDhGLSLthTqz5gR3AH4NsOAVdHzgsMJalYCBxE1gALcBLt_mcaeVrGPzKhginPJ2WDe5zz9mzFEj7a6F4ps3XGoGY7qn6aBBPM-gobr-uFvdBO2C81wnl-AaI6Q6U:1sFdyZ:v9XzZWJgAUJ12WngKzRhYZW2R2t4PH44j4687kXC-1s",
+    "expire_date": "2024-06-21T18:06:07.575Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cn2sxtzdgix7g0j12bb89c2rv7fhnuyy",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGll2_Isp6TmDtd7d4ABypDipEHcHSymgfTPzXiLBvpW0N17TTOIstDj9bhnwwbUDukO9LRKXuq1zll2RB23yuhA_L4f7d1CglV6DNVGxMyPjFCkHUtlEFwiVU5q1D5GDmYwaLFgcVYhf6jkPrDM6j-L9AeIIN6k:1sEADI:CrRbCUza11eKa1fgCoyDIZIIduUUs5yIjK_9IMjmXEg",
+    "expire_date": "2024-06-17T16:07:12.037Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dllj7n3nfn5shbttng6w4coupsm2dqix",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGll2_Isp6TmDtd7d4ABypDipEHcHSymgfTPzXiLBvpW0N17TTOIstDj9bhnwwbUDukO9LRKXuq1zll2RB23yuhA_L4f7d1CglV6DNVGxMyPjFCkHUtlEFwiVU5q1D5GDmYwaLFgcVYhf6jkPrDM6j-L9AeIIN6k:1sEAF1:g4szmKF6e54tc4svAKaXPUJGJVcxRYEbHca1BxS9QA0",
+    "expire_date": "2024-06-17T16:08:59.661Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dr4pslb8yn9shx1s959q1ixkqrn9i26p",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGll2_Isp6TmDtd7d4ABypDipEHcHSymgfTPzXiLBvpW0N17TTOIstDj9bhnwwbUDukO9LRKXuq1zll2RB23yuhA_L4f7d1CglV6DNVGxMyPjFCkHUtlEFwiVU5q1D5GDmYwaLFgcVYhf6jkPrDM6j-L9AeIIN6k:1sD0VG:2rZXPdhdggl3sEn7q_aCYU2rJR7vlmhB1zpzHO_TklQ",
+    "expire_date": "2024-06-14T11:32:58.419Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "drqcm3j5u9vasr9d4thvrsct5kxkeklm",
+  "fields": {
+    "session_data": ".eJxdkEFugzAQRe_idYJs7LhOdq0qNasUpVUqsrEGewwoBKsY1Ioqdy8QFklWI_3R-280fyT3Pq9w6aFri1iHFlokG1If-wPutp8v36cSup-P9PcrSfesb17P1CaJJAuiR0J3ARtd2gHhD2EG5oT1uAnelFBp4xuM5jREV2_0No3359F-zxcQigFWFjiVXKyEjLlSzlBgmV2jk1KhtE_UKaNsxqwAJyg4JiCOOXKmqDCMqaF09k_VFYRWVz4v65sD735ALv-OnV1e:1sGPnN:7gCJnI-SWj79rm6NAmtrYuQTv4QfQcvXvUFqjqLrFSA",
+    "expire_date": "2024-06-23T21:09:45.765Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e8zhmr98tbx3mr6nxhrqz6lbzkcij9n5",
+  "fields": {
+    "session_data": "e30:1sEuR3:_e__ToqE6x8eBrly-fGLdBfzkmm6EXjZlGqTYyOmkZk",
+    "expire_date": "2024-06-19T17:28:29.009Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f9lebddn9thd36c61rww3mhk943zr5li",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm21581JT1nsNY_HECOFCcV4u4QKQW0b2beiwXa1ha2UZYwZXZmhp1-t0jpUfoO8p36beZp7usyRb4r_KCDX-dcnpfD_TtoNNq3lgq1UKRM9MkTelErWgc5FuedQW2MlUqQ9s7GXLQEiEZBRqyAoC2x9we4hDad:1sE8hr:W-dl626--3V1TAQr4XP0QFx49IUuF-PIaQgjedj91UE",
+    "expire_date": "2024-06-17T14:30:39.954Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fapj1fla8hnvo5llo9z7troeywwrwhly",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sH3z5:cfH9_rs5nyMz0uM1O61r4B3D-8W3LG6yJkR7szKEfjc",
+    "expire_date": "2024-06-25T16:04:31.171Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gcgbf6r4ebv1txlh9qylz75aas925m9n",
+  "fields": {
+    "session_data": ".eJxVj8tuwyAQRf-FdWoZ24lxVn0sKlWtonTXbNDwGNsJhghwUzXKvxeqSG0WSHBmzp3hTHrneqPvHMxxqHiIEDVZkx5edvJjZ96_T5tts314Pjan1ROI1_LLIm4msiBe92OIHuLoLFcQgazPBD7TxZO1nY1ZkDlob2HKgYBBIajk4ehD5FccAFU-iRv4w6gggMJE9QSjyX6y8b7Pr0K6PB-EmyMP2uBvvMpCSPwIIZycV5macFB7HPp_mHt91BBvqpcF4fn_PC_Mx6wuyQ0TIA_a5oLag-1d2sFGP4oitxTXaijenNLm8dp7EzBAGJJNWUeXta4YpVBCKUXLaiZps6KsFbSt26Zroat1J5jUlawQQZQMm3JV1k1FFbn8AGkvkpQ:1sH4Fc:-BfgBtQy95H-yx36KuKIv-v-dEwYrQwFIVvbC-cOT7E",
+    "expire_date": "2024-06-25T16:21:36.205Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gd31ckg1nkmdfjvdb9hw34pjx8mn5tb4",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCGQmFcuvcMBDqDVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hJnEWRpx-txSnB9cd0D3WW5NTq-syJ7kr8qBdXhvx83K4fwcl9vKth-ytUz7lPCoPA2ImNNqgImINCKPVFrxLatCEnpHRsdE6sgOIRCjeH70pNwY:1s7GuB:WFXo5HCqweipG7D-1LwrB4sBstxK6cuLio3ZuulVb2k",
+    "expire_date": "2024-05-29T15:50:59.095Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "guvtges348pl6al3q1mzqerd30ttu86e",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sH3yy:FfJe68sEqg4PI8yz4HQ7buEuI7bD81taMJDF574AT4k",
+    "expire_date": "2024-06-25T16:04:24.595Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i66ylejsc5mb36r4470ietzjym4to4am",
+  "fields": {
+    "session_data": "e30:1sEuVp:z6FXTp7N1AM_WM5AcqvQrCVN7oOUas3fwPZiwU3NN8Q",
+    "expire_date": "2024-06-19T17:33:25.858Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jy4u59jh5yubiwetfrgijic2jezgh8rn",
+  "fields": {
+    "session_data": ".eJxVkMFuhCAQht-FszG6WkRPTe99BjIyA7KLuAHsHjb77oXWpPUyTL7_g_zhyQIZG1OAZDcvERKw6cngKy-BTX53rmJ7pOBhJTYxMmFhFdM2xCQP9tAmIwd_BHVEUzxawboCwFP6Gb-n9fRuSlarbc0ezNueZCSnsxw16szuEONjC5gJuHjDq17MPywD3QnSKX1VTMKeFlkaS1uudgM7wRnUjXxJ8ArebLmAT8HOdVHqI43154bkPg739MACcSkfQdhg16p-GFGJph14O3NBvGtRX_QwN0qAGkm_NY0QXDU9jn0rBk38ogbVcfb6BupWgRY:1sGiZb:b10Jwwl989sTfj-3djlQP81aEhmUOGS3h1-Td2JqUA8",
+    "expire_date": "2024-06-24T17:12:47.787Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "k3406x7ltjrh3bbd50cpao0mie5oqvaw",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGll2_Isp6TmDtd7d4ABypDipEHcHSymgfTPzXiLBvpW0N17TTOIstDj9bhnwwbUDukO9LRKXuq1zll2RB23yuhA_L4f7d1CglV6DNVGxMyPjFCkHUtlEFwiVU5q1D5GDmYwaLFgcVYhf6jkPrDM6j-L9AeIIN6k:1sEAEM:TcZUEgb-k82uwRCsBXxUtRrx8vy_xOgyHFt9Z6XVHfg",
+    "expire_date": "2024-06-17T16:08:18.173Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kfo0xzleqk13v49sq4rq70iazqpqbhqd",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAozAAu3XsGMjBgq4YmpV0Z765NutDtf-_9l4i0rWPcelnixOIsQJx-t0T5UdoO-E7tNss8t3WZktwVedAurzOX5-Vw_w5G6uO3Ni4MbGlgpZLWEGBI1lQADWg8ks9G-awSgrYJndJcra_GoiPGEjSK9wetITaA:1sD519:sIVZv3qrS5yY5zwmTh2-yrcXE6qBkfVrVkatkJ6OnRU",
+    "expire_date": "2024-06-14T16:22:11.567Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lotgfkt5qa3fgwgskau7v5y25jlp6eon",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sFfBX:vuSUVsewh1B7V4m24eVsOQstOwFNijzQ__5nhjzdhWk",
+    "expire_date": "2024-06-21T19:23:35.653Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o0ih3g0m3wz9ttgzzwli2flfnc3x9vl4",
+  "fields": {
+    "session_data": ".eJxVkMFuhCAQht-FszG6WkRPTe99BjIyA7KLuAHsHjb77oXWpPUyTL7_g_zhyQIZG1OAZDcvERKw6cngKy-BTX53rmJ7pOBhJTYxMmFhFdM2xCQP9tAmIwd_BHVEUzxawboCwFP6Gb-n9fRuSlarbc0ezNueZCSnsxw16szuEONjC5gJuHjDq17MPywD3QnSKX1VTMKeFlkaS1uudgM7wRnUjXxJ8ArebLmAT8HOdVHqI43154bkPg739MACcSkfQdhg16p-GFGJph14O3NBvGtRX_QwN0qAGkm_NY0QXDU9jn0rBk38ogbVcfb6BupWgRY:1sGiZb:b10Jwwl989sTfj-3djlQP81aEhmUOGS3h1-Td2JqUA8",
+    "expire_date": "2024-06-24T17:12:47.789Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "oz1wx8mti82dhalsfpb7mowvwyzm2ew7",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sFfBS:DwJ0Bo4DftVgYtJRik151Nx6bFHe-_4jDevfAZt7nOE",
+    "expire_date": "2024-06-21T19:23:30.970Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ozii59onqap0yqau56abjoq1xhwsoajg",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllh48-akp4zWLv-4ACypTipEHcnkVJAOzPvvYWndSl-7Wn2UxQXocTplzGFZ6q7iA-q9yZDq8s8sdwTedguby2m1_Vo_w4K9bKtM6Y8BpWAjAWHgErjaDVSRoXAG88ujITsgB1qC2cTgIaYgcEMNorPF9vAN44:1s7G30:wut6-FitiZ7BEsLob4TEvNp1vD2jSFErODAACUt_klc",
+    "expire_date": "2024-05-29T14:56:02.460Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p5o8w2ddftlidnhjfge3i9m48juw0u49",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAGaBlcuvcMZBhAqoYmpV0Z765NutDtf-_9lwi0rTVsPS9hSuIsBnH63SLxI7cdpDu12yx5busyRbkr8qBdXueUn5fD_Tuo1Ou3BvQwmKwRgBQpjg4NMtgR0EVwxlnvyJvsI3LWrEuhqLBYNSpjNSTx_gC0eDbd:1sEuWc:V1Q--mAS_xmk2uX3j5CaErHM9YrYoaffavDVAOKJLcc",
+    "expire_date": "2024-06-19T17:34:14.026Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pi1vjkdvjplv7n98ae1r51nvenwy833q",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sH3z8:YR48xu0yE5pqcJy6cNKNZgTg-u-6mmJ3qVRXgo25FXA",
+    "expire_date": "2024-06-25T16:04:34.233Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "s9j1pp1mwykw5zbhoi5k3hj5stpgck4a",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAGaBlcuvcMZBhAqoYmpV0Z765NutDtf-_9lwi0rTVsPS9hSuIsBnH63SLxI7cdpDu12yx5busyRbkr8qBdXueUn5fD_Tuo1Ou3BvQwmKwRgBQpjg4NMtgR0EVwxlnvyJvsI3LWrEuhqLBYNSpjNSTx_gC0eDbd:1sGHYJ:GypNFrZ1vbSPhjCUHeXXHYLrIUE0k1DaFO6mbmTnBEM",
+    "expire_date": "2024-06-23T12:21:39.231Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tmvsilun6xokpu615qo3rjx1paax7stg",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sFfBP:krlBWlJt04IF7pkGQFaG4TQDpkp8fRLepij75S8ZVx4",
+    "expire_date": "2024-06-21T19:23:27.308Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tzfl8fvo8x3er1j0298twgxtyz8yqvry",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQBf-FsyEs0AI9evcbyAJbizZtAlQPxn_XJr30-mbmfdgr05uSx9JynMkDGDa0stGFedza5LdKxefEBtax0xYwPmnZQXrgcl95XJdWcuC7wg9a-W1NNF8P93QwYZ3-NVgHnSJpAVCgiMFYZSPoHqwJYJTRzqBT5IKNJKMcRwzCjlr0QmkJiX1_V4BABg:1sGQqq:BbdNpuKftuZJnugj2tpPKkCIqCNTi4s6ijroEMr2JIc",
+    "expire_date": "2024-06-23T22:17:24.810Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u0jwkpyiai77amppislwmz1y2uim4ese",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQBf-FsyEs0AI9evcbyAJbizZtAlQPxn_XJr30-mbmfdgr05uSx9JynMkDGDa0stGFedza5LdKxefEBtax0xYwPmnZQXrgcl95XJdWcuC7wg9a-W1NNF8P93QwYZ3-NVgHnSJpAVCgiMFYZSPoHqwJYJTRzqBT5IKNJKMcRwzCjlr0QmkJiX1_V4BABg:1sGQqZ:KEnYhdH3R85pZS0lZFPvhXC1lfz6axkAQihhgsUgRbE",
+    "expire_date": "2024-06-23T22:17:07.394Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ujqqgjq8xcxbfqm6lsd8w1s4wvzio5yv",
+  "fields": {
+    "session_data": ".eJxVjEsKwzAMRO-idegBvOohujdqogSD_IkkN5SQu1eBlpLdvHnD7CC0JDVBS7XECQ0h7IAvDwKhdOYBupIUzAQBHqQGA8xJ1OK3c2a8IGVM7NF8fV9OuI01u8Bn7RaVeP59N1Tdqky-XttWKUm3N_z7KNQI7aqP4wNI00FL:1sE8UH:C3cJHfQajpFcEYsd5H2p9QX50tkh9XxT63pVO0Qftj4",
+    "expire_date": "2024-06-17T14:16:37.744Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "v8nb7f2tcvscgvklp9lk7ls4w1wy0xpq",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGll2_Isp6TmDtd7d4ABypDipEHcHSymgfTPzXiLBvpW0N17TTOIstDj9bhnwwbUDukO9LRKXuq1zll2RB23yuhA_L4f7d1CglV6DNVGxMyPjFCkHUtlEFwiVU5q1D5GDmYwaLFgcVYhf6jkPrDM6j-L9AeIIN6k:1sAaOo:8aJidQciCzqfyhaKwt43US65cEI0JvK9xMTai1slIYw",
+    "expire_date": "2024-06-07T19:16:18.866Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vu1r326nms6f97856o4q8awzxgqop7nq",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sH3yv:3fzr_ej4NkiWnCOVZiRqVxwlCr07eIWQzENUgVybtDg",
+    "expire_date": "2024-06-25T16:04:21.017Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xgrt5q6p38i5q3z16py4j5n4ekd86vky",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sH3z2:J65L9rl9oymZWzPTRw4NlBBDPJukX1IZbywn8HlOOnM",
+    "expire_date": "2024-06-25T16:04:28.049Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xxhtz9dqbml57vqcbna0dwdk1cm4o86k",
+  "fields": {
+    "session_data": ".eJxVjL0OgjAURt-ls5JCgVI3jQ6SgCYs6kLa28uPIDVQHDS-u5CwuH7nnO9DSmPKFtdGjrby8sFKi2RDwiNAeinitNnenu8r-orH5-Tl9dljb7PTgaxIPhf5OGCf13pK3P9NSWiwm4G-y640DpjO9rVyZsVZ6OAkRmO7W9y_g0oO1VxLnwmKAYsQCqEV11QxEXANNKAuuiEXyFnBqOdLHyLKxURDVB66CoIQyPcH-9lK2A:1sGPpm:UQQ7Y5yjJ8lA5b7dVlEAMNgdX93decZ56qTasNuBFKQ",
+    "expire_date": "2024-06-23T21:12:14.447Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yq14uxc33juzx95ow6f4hcdykhh9cio8",
+  "fields": {
+    "session_data": "eyJ2aWV3ZWRfYXJ0aWNsZV8xMTMiOnRydWV9:1sFfBK:CB8B58U0tXf03URyu9wAY6dAQ3arFGf7wKDf5x5tmZs",
+    "expire_date": "2024-06-21T19:23:22.919Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yr3m8muktrmwx67d7cxsuc596748yays",
+  "fields": {
+    "session_data": ".eJxVjs1uxCAMhN-FcxQ1bCA_p6r3PgMywSTssrDCpD2s9t0LUqo2B1vWN-PRPFnC1VFOkF0MykAGNj8ZfJUjsTns3jdsJ0wB7shmBmRsHdYw6xJl9cuNpYN7-MMGqNgrxTs4X0hGyu918XaJ9yKAjntWhN6e_A8g-o7J1GxPN3O12_oPq4QPhHxSXw1TsOdN1b7K1Vc-sRPUsNwwVMVcIayxdAg5Od1WS3uo1H5Gg_7j8J4CNqCtfMtBg-gs2kF2l96CkWbhyLnUwgrRj9zIi9ZviNNoRy5kN2mhoedjz_thWgb2-gGx7n_v:1sEB1J:osTuF7cDTwjn259u14utOzhW3zU5VQh49Hr8EpRb4RI",
+    "expire_date": "2024-06-17T16:58:53.164Z"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 100,
+  "fields": {
+    "title": "VK построит новый ЦОД в Санкт‑Петербурге",
+    "slug": "vk-postroit-novyi-tsod-v-sankt-peterburge",
+    "body": "Компания VK построит новый центр хранения и обработки данных (ЦОД) в Санкт‑Петербурге. По словам VK, новый ЦОД будет базой для развития высокотехнологичного кластера в регионе. Соглашение о партнёрстве подписали губернатор Санкт‑Петербурга Александр Беглов и генеральный директор VK Владимир Кириенко на конференции ПМЭФ.\r\n\r\nСтороны считают, что строительство нового дата‑центра будет способствовать формированию благоприятных условий для развития IT‑инфраструктуры и созданию более 250 новых рабочих мест в регионе.\r\n\r\nКак заявляет IT‑компания, сеть собственных ЦОДов позволит поддерживать высокую производительность и надёжность сервисов VK для пользователей и бизнеса. В основе IT‑инфраструктуры компания планирует использовать облачные технологии, это повышает гибкость управления вычислительными мощностями и рентабельность инвестиций в них.\r\n\r\n21 мая 2024 года VK открыла IT‑хаб в Новосибирске. Новое рабочее пространство компании находится в коворкинге «Практик» по адресу: Депутатская улица, дом 46. В Новосибирске работают 100 сотрудников VK.",
+    "created": "2024-06-07T18:48:44.016Z",
+    "updated": "2024-06-08T09:03:36.142Z",
+    "publish": "2024-06-07T18:48:44.006Z",
     "author": 1,
     "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 101,
+  "fields": {
+    "title": "Кейс. Как найти клиентов на дорогой продукт. Реклама умных домов в Дзене со средним чеком 1 млн. ₽",
+    "slug": "keis-kak-naiti-klientov-na-dorogoi-produkt-reklama-umnykh-domov-v-dzene-so-srednim-chekom-1-mln-r",
+    "body": "После успешного сотрудничества по ремонтам, заказчик посоветовал меня своему знакомому. Мне нужно было найти лидов на умные дома. Учитывая, что я работал с ремонтами задача должна была быть довольно простой. Но был нюанс.\r\n\r\nВходные данные.\r\nПродукт.\r\n— умные дома. Те, что позволяют открывать квартиру отпечатком пальца или удаленно, включают вентиляцию, когда превышен уровень углекислого газа и т.п. Но эти умные дома не простые. Заказчик занимался внедрением систем автоматизации в промышленных компаниях. Эти же системы заказчик решил внедрять в частные дома и квартиры.\r\n\r\nСтраница из презентации для клиента. \r\nСтраница из презентации для клиента.\r\nОсобенности продукта накладывали много ограничений. Такие умные дома очень дорогие: всем управлял мощный компьютер (мозг), вся система соединялась проводами, а ПО еще нужно было настроить. Сильно ограничивало ЦА ещё и то, что устанавливались системы только в жильё без ремонта. Потому что провода прятались под отделкой.\r\n\r\nПоэтому мои знания сферы ремонтов помогали, но не до конца. Аудитория была похожа, но гораздо уже.\r\n\r\nЦель.\r\n— найти каналы, где есть целевая аудитория. Протестировать несколько каналов и дать обратную связь по поводу того, стоит ли вообще работать в этом направлении. Нужно было узнать стоимость клиента и посчитать рентабельность.\r\n\r\nГипотезы.\r\nВ начале работы клиент заполнил бриф, а я, как обычно, собрал портреты аудитории, проанализировал конкурентов и приступил к составлению списка гипотез. Mind-карта с портретами аудитории у заказчика и он попросил её не показывать, но разрешил описать своими словами.\r\n\r\nЭто скриншот брифа. Обычно заказчики очень откладывают его заполнение, поэтому я заполняю то, что знаю сам, а потом помогаю заказчику закончить и поправить некоторые моменты. \r\nЭто скриншот брифа. Обычно заказчики очень откладывают его заполнение, поэтому я заполняю то, что знаю сам, а потом помогаю заказчику закончить и поправить некоторые моменты.\r\nАудитория.\r\nОбщими характеристиками для всех портретов были:\r\n\r\nВысокий уровень дохода. Потому что система дорогая и такое никто не берёт в кредит или ипотеку. Таких людей мы находим по настройкам дохода, по дорогим интересам и т.п.\r\n\r\nЕсть новостройка или недавно купил частный дом. Таких людей можно найти по ГЕО строящихся/недавно построенных домов и частных поселков. Также можно протестировать интересы \"Недвижимость\".\r\n\r\nДальше выделили несколько портретов. Так как продукт новый, то идеи для портретов искали у конкурентов. Также помогил знакомые заказчика, которые хотели бы и могли установить себе такой умный дом. Вот что у нас получилось:\r\n\r\nОдинокий владелец бизнеса 25-40 лет. Очень высокий доход. Ценит своё время и комфорт. Также не против подчеркнуть свой статус дорогими вещами. В рекламе показываем как умный дом упростит жизнь и станет возможность попонтоваться перед знакомыми.\r\n\r\nСемья с детьми. Детям до 10 лет. Высокий доход. Основная причина купить — комфорт и безопасность детей. Рассказываем от каких неприятностей может спасти наша система: потоп, высокое содержание CO2, грабители. И как некоторый функции могут улучшить жизнь: автоматическое включение света, удаленное открывание дверей, онлайн камеры.\r\n\r\nХотя бы немного понимая своих клиентов, можно начинать их искать. Но ситуацию осложнял плохой сайт. Он был сделан по шаблону, тексты написаны на скорость и выглядел так, будто не готов продавать дорогие умные дома.\r\n\r\nСоздать другую посадочную не было возможности. Для тестов никто не хотел этого делать. Поэтому я решил вести либо через прокладку, либо на другую платформу сбора лидов. Например, группу ВК или Марквиз.\r\n\r\nПомимо плохого дизайна и некачественных текстов на сайте были и откровенные ошибки.\r\nПомимо плохого дизайна и некачественных текстов на сайте были и откровенные ошибки.\r\nВарианты рекламы.\r\nЯ начал перебирать варианты тогогде мы можем запуститься, чтобы найти нужную аудиторию и донести до неё наш оффер.\r\n\r\nДирект Поиск. Самый популярный вариант, но не очень эффективный. В поиске проводные умные дома набираются редко. Плюс в этом канале нужно быть лучше конкурентов. А мы только начинали работать на этом рынке, поэтому лучше быть не могли.\r\n\r\nДирект РСЯ, Таргет ВК. То, что при правильной настройке дало бы результат. Можно найти обеспеченную аудиторию. Можно таргетироваться на нужное ГЕО. Много склика и конкурентов из смежной сферы ремонтов, но работать можно.\r\n\r\nАвито, услуги, профи и другие агрегаторы. Запрос на умные дома там был, но в основном на недорогие беспроводные дома. Найти достаточное количество клиентов там невозможно.\r\n\r\nДзен (сейчас ПромоСтраницы). Промостраницы незаезженный инструмент, откуда можно получить аудиторию недорого. Огромное преимущество в том, что платим мы только за переход. То есть за 120 рублей мы получаем переход уже утепленного клиента.\r\n\r\nКак итог — решили протестировать Дзен и Таргет ВК.\r\n\r\nВ качестве посадочной решили использовать: статью в Дзене и Квиз. Сайт тоже решили протестировать, хоть я и относился скептически.\r\n\r\nРаботы над рекламой.\r\nСогласовав гипотезы для тестов я приступил к работам. Нужно создать несколько связок:\r\n\r\nРеклама на Дзене + Сайт.\r\n\r\nРеклама на Дзене + Марквиз.\r\n\r\nВК + Марквиз.\r\n\r\nВК + Дзен + Марквиз.\r\n\r\nВК + Чат-бот.\r\n\r\nРеклама на Дзене.\r\nПисать гайд про то, как настраивать Дзен я не буду. Стоит сказать только, что работают здесь две вещи: крутая бьющая в интерес клиента статья и ЛАЛ. ЛАЛ — это когда загружается аудитория действующих клиентов и Яндекс ищет похожих. Мы в качестве ЛАЛ использовали номера людей, которых спарсили в группах ВК.\r\n\r\nРеклама в ВК.\r\nТут все посложнее. Комбинировались разные аудитории. Заказчик просил не рассказывать какие конкретно зашли. Но сработали просто интересы + доход и целевые группы, которые спарсили.\r\n\r\nРабота над посадочными.\r\nСтатья на Дзен.\r\nУ меня есть опыт в написании статей, поэтому я предложил самому написать статью. Но так как это не моя основная деятельность, то для теста мы заказали еще две статьи у фрилансера. В Дзене статья — это очень важный пункт, поэтому нельзя делать ставку только на одну.\r\n\r\nТемы для статей подбирал исходя из анализа ЦА. Мне показалось, что эти темы были бы интересны потенциальным клиентам:\r\n\r\n\"Как я выбирал компанию по установке умного дома.\" Рассказать про критерии выбора, что важно учитывать. От лица клиента.\r\n\r\n\"Больше не представляю себе жизнь без умного дома\". История клиента от его лица. До/После. Ощущения/впечатления от использования. Как умный дом улучшает жизнь.\r\n\r\n\"Умный дом за 1,5 млн, 1 млн и 0,5 млн. В чём разница и какие есть варианты\". Рассказать о том, на что клиент может рассчитывать с разным бюджетом. С таким заголовком можем отсечь часть тех людей, кто будет читать просто из любопытства.\r\n\r\n\"Какую систему умный дом выбрать/какой пакет/какие функции включить\". Написать либо в одной статье, либо серию для разных сегментов по разным критериям: семейное положение (Одиночке, семье с детьми, паре, пожилой паре), профессия (программисту, предпринимателю, топ-менеджеру) и т.д.\r\n\r\n\"Оказывается умный дом умеет и так. Топ-5 лучших решений\". Рассказать про лучшие решения, которые можем сделать.\r\n\r\n\"Почему стоит установить умный дом. Рассказывают владельцы.\" Самые главные причины для установки умного дома рассказать от лица клиента.\r\n\r\nСогласовали эти темы:\r\n\r\n\"Как я выбирал компанию по установке умного дома.\" — Эту писал сам.\r\n\r\n\"Потратил на умный дом полтора ляма. Вот что получилось.\" — Эту тоже писал сам.\r\n\r\n\"Что такое умный дом\" — Писал знакомый копирайтер заказчика.\r\n\r\n\"Какие процессы можно автоматизировать\" — Писал копирайтер, которого я нашёл на официальном сайте Дзена.\r\n\r\nОгромный плюс статей — это стоимость и скорость. Статьи, которые я написал входили в стоимость ведения. Статья копирайтера с Дзена стоила всего 1500₽. А статья копирайтера из компании и того дешевле. Представьте, сколько стоило бы создать и протестировать четыре разных страницы.\r\n\r\nСтатьи, которые сработали можно прочитать здесь:\r\n\r\n\"Потратил на умный дом полтора ляма. Вот что получилось.\"\r\n\r\n\"Как я выбирал компанию по установке умного дома.\"\r\n\r\nДругие статьи не мои, поэтому показывать их не буду. Особенно учитывая, что они не очень хорошо зашли.\r\n\r\nЭто статья от автора, которого советует Дзен. В целом, сработала неплохо. Главное, что сделана по всем правилам Дзена: несколько привлекательных заголовков на тест, небольшой объём и написана простым языком.\r\nЭто статья от автора, которого советует Дзен. В целом, сработала неплохо. Главное, что сделана по всем правилам Дзена: несколько привлекательных заголовков на тест, небольшой объём и написана простым языком.\r\nМарквиз.\r\nМарквиз — это сервис, где можно быстро создать квиз по готовым шаблонам и разместить его. Я использовал его, потому что на сайт не хотелось вести даже утеплённого статьёй пользователя. Получалось так, что человек читал статью, заинтересовывался в продукте, а потом мы давали ему возможность посчитать стоимость своего умного дома.\r\n\r\nРасчёт пользователь получал только после того, как оставит номер. При этом квиз был динамический — в зависимости от ответов, которые выбирал человек изменялась конечная стоимость. С\r\n\r\nПосмотреть квиз можно по ссылке.\r\n\r\nНа каждом этапе я больше рассказывал о продукте и фильтровал людей, которые не могли стать клиентами. \r\nНа каждом этапе я больше рассказывал о продукте и фильтровал людей, которые не могли стать клиентами.\r\nРезультаты.\r\nВК или ПромоСтраницы.\r\nПосле тестов оказалось, что реклама из ВК по такой платежеспособной аудитории очень дорогая. Это было предсказуемо, но тестировать стоило. При этом, после оптимизации, цена заявки входила в пределы допустимого.\r\n\r\nПромостраницы же показали лучший результат. Поэтому было решено оставить лучшую связку из ВК на 30% бюджета и остальной бюджет отдать Промостраницам.\r\n\r\nБольшой плюс промостраницы получали за счёт того, что цена перехода была всего 30₽. Такой результат, конечно, был только у статьи \"Потратил на умный дом полтора ляма. Вот что получилось.\". Возможно за счёт её привлекательности и кликбейтности.\r\n\r\nПри этом мусорного трафика было немного.\r\n\r\nУ остальных статей результаты были не сильно хуже. Максимально цена клика доходила до 90₽.\r\n\r\nПосадочная.\r\nСтатья в Дзен + Марквиз.\r\nЭта связка отработала лучше всего. Статья прогревала клиентов и фильтровала тех, у кого не было денег на дорогой умный дом. А квиз позволял получить контакт клиента в обмен на расчёт цены его умного дома.\r\n\r\nЛучший результат у моей статьи \"Потратил на умный дом полтора ляма. Вот что получилось.\". Процент дочитываний у статьи 48%, а цена перехода всего 30₽. Возможно за счёт её привлекательности и кликбейтности. При этом мусорного трафика с неё было немного.\r\n\r\nНа втором месте статья от автора Дзена \"Какие процессы можно автоматизировать\". Её дочитывали в 39% случаев, а цена перехода была в районе 45₽.\r\n\r\nОстальные две статьи показали грустный результат, поэтому довольно скоро мы их отключили.\r\n\r\nСразу Марквиз.\r\nИз ВК тестировали переход сразу на Марквиз. Лиды были, но они не до конца понимали что это за умный дом и почему стоит так дорого. В статье же были прописаны нюансы-фильтры: что это дорогое удовольствие и ставится только в жильё без ремонта.\r\n\r\nСайт.\r\nПоказал худший результат из всех. Как и ожидалось, но заказчик просил проверить. Дзен в этом плане выигрышнее, потому что для него не важно как давно компания работает, есть ли у неё отзывы и другие факторы доверия. Человек проникается доверием \"общаясь\" с брендом (читая статью).\r\n\r\nИтоговая стоимость.\r\nСтоимость клиента с ВК: 42 000₽.\r\n\r\nСтоимость клиента с Дзена: 25 000₽.\r\n\r\nВсего потенциальных клиентов за два месяца работы: 46.\r\n\r\nДа, не все потенциальные клиенты конвертируются в продажу прямо сейчас. Это особенность бизнеса. У кого-то дом ещё строится, кто-то не определился с функциями дома. Но результат заказчику понравился и сейчас происходит компания делает умные дома для частников.\r\n\r\n\r\nЧто дальше.\r\nУ Промостраниц большой потенциал, потому что статьи показываются не только на Дзене. Поэтому статья может приносить трафик довольно долго. Но чтобы увеличить эффект я советую постоянно писать новые статьи. Это позволит охватить новую аудиторию и протестировать новые подходы, которые будут эффективнее.\r\n\r\nТакже я посоветовал клиенту продолжить рекламу в ВК. А в чат-бота внедрить лид-магнит, который будет выдаваться тем, кто подпишется. Собрать подписчиков важно ещё и потому, что срок принятия решения очень большой. И когда человек купит квартиру или начнёт делать ремонт, мы должны быть у него под рукой.",
+    "created": "2024-06-07T18:51:37.611Z",
+    "updated": "2024-06-08T09:03:26.730Z",
+    "publish": "2024-06-07T18:51:37.610Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 102,
+  "fields": {
+    "title": "Как создавать и развивать продуктовую стратегию в 2024 году",
+    "slug": "kak-sozdavat-i-razvivat-produktovuiu-strategiiu-v-2024-godu",
+    "body": "Вступление и знакомство с гостьей\r\nУже второй год мы дружим с организаторам кэмпа South HUB – мероприятия для сотрудников высшего звена в IT, которое проходит с 8 по 12 июня в Сочи, Гранд Отель Поляна.\r\n\r\nВ этом году команда кэмпа помогла мне создать пару очень интересных выпусков подкаста «Стартап-секреты» по теме стратегии продукта, для чего они познакомили меня с руководителями крупнейших IT-компаний в России: Яндекса, Озона и red_mad_robot (70% принадлежит VK Group).\r\n\r\nЭтим людям явно есть что рассказать про развитие цифрового продукта в 2024 году!\r\n\r\nПервым гостем стала Ирина Марчева, директор по продукту в ecom-направлении Поиска Яндекса и член пограммного комитета South HUB.\r\n\r\nEcom сценарии в Поиске Яндекса – это более 350 сотрудников и 10 продуктов одновременно, так что о продуктовых стратегиях она знает практически все.\r\n\r\nОсновные задачи ecom продуктов в поиске Яндекса – это помочь найти любой товар, который продается в рунете, посмотреть полную информацию по нему: фото, характеристики, отзывы и прочее, сравнить цены и условия доставки из магазинов, где этот товар продается онлайн. Российский аналог Google Shopping.\r\n\r\nЕсли буквально, ecom направление в Поиске Яндекса поможет найти практически любой товар, который можно купить в онлайне, покажет в каких интернет-магазинах и по каким условиям этот товар можно приобрести, а также поможет разобраться в категории, если вы еще не определились с конкретной моделью.\r\n\r\nВ этой статье – все, что мне удалось узнать от Иры за полтора часа нашего разговора.\r\n\r\nСправа карточка телефона. Это один из блоков, которыми управляет Ира со своей командой.\r\nСправа карточка телефона. Это один из блоков, которыми управляет Ира со своей командой.\r\nЧто прямо сейчас происходит на рынке e-com\r\nРынок ecom – это одна из самых интересных и конкурентных ниш в бизнесе прямо сейчас. Во время пандемии он рос в разы и продолжает значимо расти каждый год, так что до сих пор появляются новые компании, которые стремятся занять свое место под солнцем.\r\n\r\nПоиск Яндекса также играет на рынке e-com и стремится дать дополнительную ценность как онлайн покупателям, так и онлайн-магазинам.\r\n\r\nНа российском рынке e-com сложилась олигополия, когда несколько лидеров заняли доминирующее положение на рынке. По данным DataInsight в 2023 году на маркетплейсы пришлось около 80% всех онлайн заказов, однако это не значит, что конкуренции в электронной коммерции нет.\r\n\r\nНаоборот, многие традиционные ритейлеры заходят на рынок электронной коммерции и развивают свои маркетплейсы. Так, недавно «Магнит» приобрел компанию KazanExpress, чтобы активно развивать онлайн-канал и превратить ее в платформу для заказа продуктов и повседневных товаров.\r\n\r\nКак люди ищут товары сегодня?\r\nСейчас люди не просто покупают вещи в интернете: они буквально серфят от сайта к сайту, от маркетплейса к маркетплейсу в поисках идей для подарков и товаров по хорошим ценам, составляют список желаемого и сравнивают товары друг с другом. С каждым годом мы пользуемся е-коммерс приложениями на своем смартфоне все больше и больше, а наше время и внимание – это то, за что борются разные бизнесы на рынке.\r\n\r\nШопинг сегодня – это не просто утилитарная функция нашел-купил, а настоящий источник гормонов радости и интересное времяпрепровождение для миллионов россиян. Согласитесь, что чувство от открытия ячейки в постамате с долгожданной покупкой сложно перепутать с чем-то другим.\r\n\r\nЯндекс также видит этот тренд и интерес людей к покупкам в интернете и стремится помочь пользователям максимально эффективно решить их задачи, связанные с товарами. Ведь часто молодежь предпочитает искать ответы на свои вопросы, например, в ТикТоке, а не в привычном поиске.\r\n\r\n\r\nЧто такое продуктовая стратегия Так что такое стратегия компании в 2024 году?\r\nЕдиного унифицированного определения стратегии и продуктовой стратегии нет. В современных бизнес-школах принято говорить, что стратегия – это набор принятых решений, которые позволяют компании достигать своих целей в долгосрочной перспективе. И в этом определении есть 3 важных пункта:\r\n\r\nЦель: куда вы двигаетесь;\r\n\r\nСреда: за какого клиента вы боретесь и кто ваши конкуренты;\r\n\r\nДолгосрочные перспективы: на какое время вы строите планы.\r\n\r\nТак вот, продуктовая стратегия – это то, как при помощи конкретного продукта или портфеля продуктов можно достичь долгосрочных целей компании. И её можно сделать для любого бизнеса: от стартапа до государственной корпорации.\r\n\r\nЕсли у вашего бизнеса до сих пор нет стратегии, то очень рекомендую вам поставить ее разработку в лист своих приоритетов. Если вы начнете думать о стратегии прямо сейчас, то уже к концу года у вас есть шанс сделать качественный рывок на рынке!\r\n\r\nЕсли вы только развиваете свое дело и думаете, что стратегия – это сложные, красивые и дорогие документы, то это далеко не так. Вам точно нужно знать, что, кому и за сколько вы планируете продавать. Без ответов на эти вопросы невозможно делать бизнес. И если стратегия есть только у вас в голове, то донести его до всей команды.\r\n\r\n\r\nTop down против Bottom up подхода: что лучше для вашей компании\r\nВ разработке стратегии можно выделить два основных подхода: Top down и Bottom Up.\r\n\r\nПервый вариант чаще всего используется в крупных корпорациях. Это как раз те самые красивые слайды в крупных корпорациях, которые разрабатывают профессиональные стратеги и маркетологи.\r\n\r\nТакая стратегия становится основой для принятия решений в компании, и ее положения спускаются вплоть до уровня начинающих стажеров в компании, чтобы они тоже понимали, чем этот бизнес отличается от всех остальных. И в таком случае все команды разработки «сверяются» с этой стратегией и становятся частью одной большой цели.\r\n\r\nBottom Up чаще всего встречается в начинающих компаниях и стартапах, где еще нет культуры написания стратегии и каскадирования ее в команды. Тогда команды сами могут создавать стратегии своих продуктов, исходя из своего видения.\r\n\r\nВ последнее время многие корпорации стали более открыты для творчества своих сотрудников, и это радует. Я лично знаю несколько крутых продуктов от российских IT-гигантов, которые начались с идеи простых сотрудников. Ира рассказала, что в Яндексе такие проекты называют “Грибами”. Когда-то из такого “гриба” вырос новый бизнес Яндекса – Яндекс Путешествия.\r\n\r\nПро важность фокуса\r\nФокус на ключевых направлениях особенно важен для компаний, которые придерживаются Bottom Up-подхода. Ведь потратить деньги на бесполезную разработку очень просто!\r\n\r\nВ Яндексе, который в последнее время занял основные ниши российского айти, команды фокусируются на основных бизнес-целях и фильтруют задачи/проекты согласно этим целям. Невозможно делать всё и сразу.\r\n\r\nСтратегия как раз помогает фокусировать сотрудников на нужной цели: чтобы они просеивали реально важные идеи через «сито» целей вашего бизнеса, а не бежали в разные стороны с новыми идеями.\r\n\r\nКак создать продуктовую стратегию с нуля\r\nСразу хочу сказать: у Иры есть крутое выступление в академии Яндекса о том, как создавать и обновлять продуктовые стратегии.\r\n\r\nРекомендую к просмотру: https://www.youtube.com/watch?v=Zyd0fwCaRh0\r\n\r\n\r\nНо если говорить кратко, то, конечно, простых ответов не бывает: нельзя придумать пошаговый рецепт идеальной стратегии, ведь у каждой команды свои цели, задачи и планы. Однако это не значит, что в мире не придумали гайдлайнов о том, что стоит делать для хорошей стратегии.\r\n\r\nПервое – это сверится с целями компании. Лучше узнать о важности (или неважности) вашего продукта раньше, чем позже.\r\n\r\nВторое – декомпозировать цели компании на цели вашей команды. Звучит сложно, но на практике это значит следующее: вам нужно подумать, как команда может помочь в решении одной (или нескольких) целей компании.\r\n\r\nТретье – проанализировать рынок. Нужно понять текущий, будущий и достижимый объем рынка, ведь без такого анализа невозможно измерить, сколько рублей выручки вы получите от рубля инвестиций.\r\n\r\nКонечно, нативная игра го в поиске Яндекса будет прикольной штукой, но вряд ли в России найдется много любителей го.\r\n\r\nЧетвертое – подумайте, что нужно вашему рынку. Возможно, у некоторых пользователей есть барьеры для входа на рынок. Нужно изучить точки роста, найти конкурентов (как прямых так и косвенных). Ведь, например, прямо сейчас с Яндекс Маркетом конкурирует не только озон, но и авито: обе площадки решают одну задачу юзера, пусть и разными путями.\r\n\r\nЗдесь Ира приводит хороший пример о покупках мебели, которую даже жители больших городов предпочитают покупать офлайн: ведь нельзя купить кровать, не упав на нее в магазине.\r\n\r\nКрутой способ протестировать свою стратегию\r\nЕсли вы действительно хотите создать крутую стратегию и не знаете, как ее протестировать, у меня для вас есть отличная идея – попробуйте подать заявку в бизнес-акселератор.\r\n\r\nВ 90% случаев вопросы в заявке в стартап-акселератор будут повторять основные вопросы в бизнес-стратегии. А заинтересованность организаторов в вашем продукте покажет в том числе глубину проработки вашей стратегии.\r\n\r\nЭто крутое упражнение стоит выполнить даже если вам не нужно финансирование прямо сейчас, ведь жюри акселераторов всегда состоит из успешных предпринимателей, советы которых дорого стоят в бизнес-кругах. Вы же можете получить “прожарку” своей идеи совершенно бесплатно.\r\n\r\n\r\n«Пятилетка за три года» больше не работает: на какой срок создаются стратегии\r\nЕще несколько лет назад было принято создавать стратегии на 3-5 лет: ведь тогда это казалось большим сроком для развития бизнеса.\r\n\r\nНо в последнее время мир сильно изменился. Сейчас каждые полгода происходят изменения, которые требуют моментальной адаптации от бизнеса. И без нее просто невозможно развиваться и выживать! Так что менять стратегию каждые 6 месяцев – точно не вариант.\r\n\r\nСейчас компании планируют на срок не более года: и обязательно включают вариативность в свои планы.\r\n\r\nХороший план должен покрывать основные варианты развития событий кроме «черных лебедей», чтобы вам не пришлось судорожно думать в тот момент, когда надо перекраивать свой бизнес.\r\n\r\nОт вашего плана должны отходить несколько сценариев “если”: только такой план имеет шанс на исполнение.\r\n\r\nКакие риски компания закладывает в свои продуктовые стратегии\r\nКонечно, первая проблема в электронной коммерции – это иностранные поставщики. Это самый главный риск в 2024 году, который заставил крупнейших игроков рынка перестраиваться в срочном режиме.\r\n\r\nКроме того, в последнее время все чаще слышаться истории о взломе баз данных крупных российских компаний. Каждая такая утечка влияет на имидж компании и доверие клиентов, а в отсутствии иностранных компаний поддерживать должный уровень “цифровой гигиены” становится сложнее.\r\n\r\nНу и наконец есть риск падения покупательной способности россиян, однако здесь Ира не видит больших проблем для маркетплейсов. Средний чек действительно падает, но вот количество покупок в интернете растет, ведь для людей покупки онлайн становятся обыденностью, а не привилегией жителей больших городов.\r\n\r\nВсе это привело к тому, что российские компании стали … сильнее! Например, Ира призналась мне, что e-commerce в 2024 сможет пережить даже полное закрытие границ.\r\n\r\nДело в том, что бизнес уже привык искать обходные пути и настраивать процессы через соседние страны. Так что даже в полной изоляции электронная коммерция сможет доставить вам те самые “самбы”, которые вы увидели в ТикТоке.\r\n\r\nВ общем, рынок электронной коммерции будет развиваться несмотря ни на что!\r\n\r\nПро ИИ в поисковиках и на маркетплейсах\r\nЯндекс в последнее время мощно ворвался в нейрогонку и представил собственную модель YandexGPT. Сейчас компания активно внедряет ее в свои продукты.\r\n\r\nНапример, в мире электронной коммерции пользователям часто бывает сложно разобраться в новой категории товаров. Перед покупкой мы тратим много времени на видео-обзоры и статьи, чтобы понять, что именно подойдет под наши цели.\r\n\r\nПрямо сейчас в поиске Яндекса можно найти карточку товара с основными плюсами и минусами от реальных пользователей, а скоро всю информацию из обзоров за вас будет собирать нейросеть! Теперь не надо тратить время на чтение отзывов, за вас это сделает YandexGPT. Звучит очень круто!\r\n\r\n\r\nПочему все цифровые продукты становятся похожи друг на друга\r\nЯ не мог не вернуть русло нашего с Ирой разговора к началу. А именно, к вопросу о том, как сохранять уникальность в мире одинаковых компаний.\r\n\r\nОсновной термин тут – это Добавленная ценность (Added Value). То есть та ценность, которую вы даете пользователю “сверху” базовой функциональности. Именно она помогает вам быть уникальным и получать новых пользователей, несмотря на конкурентов.\r\n\r\nНо готового рецепта о том, как именно это делать не существует! Ведь если можно было бы найти ответ из разряда “делай ТАК два раза в день и спина болеть не будет”, одна из компаний давно бы выяснила его и забрала бы к себе всех пользователей. Каждый справляется с этой задачей по своему, и каждый находит своих преданных клиентов.\r\n\r\nКак не бояться конкуренции\r\nГлавное тут – не бояться конкуренции. На эту тему у Иры есть крутой кейс о том, как нишевый маркетплейс BestBuy борется с Amazon, гигантом электронной коммерции в США.\r\n\r\nРебята сразу поняли, что напрямую конкурировать невозможно, и придумали свою фишку под названием Geek Squad.\r\n\r\nЭто специальная команда в BestBuy, которые профессионально разбираются в технике и готовы подсказать вам с выбором ноутбука: по сути они берут на себя всю работу по просмотру обзоров и статей и готовы порекомендовать то, что подойдет именно вам. Такой глубокой экспертизы в отдельных категориях у маркетплейсов нет.\r\n\r\nИменно такие фишки помогают вам конкурировать с универсальными площадками и помогают вам меньше переживать за то, что у крупных маркетплейсов получается предложить лучшие цены на товары и услуги.\r\n\r\nТо есть иногда нишевые маркетплейсы могут дать пользователям больше ценности, чем крупные игроки. И в таких ситуациях лучшая стратегия – дать пользователям максимум пользы, не поднимая цены.\r\n\r\nВ чем уникальная ценность Яндекса Поиска для пользователей\r\nИра считает, что Яндекс помогает вам не только купить товар, но и выбрать лучший.\r\n\r\nКроме самих товаров, у них в доступе есть данные всего интернета по каждой категории товаров и генеративные модели, которые помогают обработать интернет за несколько секунд и выдать все самое важное в одной карточке.\r\n\r\nЭто огромное преимущество Яндекса, которого не смогут добиться остальные конкуренты. Эффект синергии, получается!\r\n\r\nС другой стороны, ожидать другого от Яндекса и не стоило: они же действительно делают все для рунета.\r\n\r\nЧто сделать, чтобы создать крутую стратегию\r\nПосмотреть видео из Школа менеджеров Яндекса. На официальном ютуб канале школы много бесплатных видео от руководителей Яндекса: точно найдете что-то полезное!\r\n\r\nПосетить South HUB и позадавать вопросы лично спикерам, гостям и Ирине в частности. Пожалуй, самая крутая возможность послушать о стратегии от первого лица.\r\n\r\nГлавный успех продуктовой стратегии\r\nИра считает, что крутая стратегия – это та, которую можно написать простыми словами на одном слайде. Чтобы ее можно было легко рассказать команде без долгих объяснений команде и начать работать над ее достижением.\r\n\r\nЗвучит банально, но часто менеджеры работают над стратегиями, не учитывая вовлеченность команды. Вот и получается, что маркетологи и стратеги тратят миллионы рублей на стратегию, а она так и пылится на диске!\r\n\r\nЧтобы такого не получалось, всегда рассказывайте команде о своей стратегии. И отвечайте на их вопросы и критику! Ведь стратегия – это диалог с командой, а не ваша лекция.\r\n\r\nНу и последний лайфхак от Яндекса: потратьте время на то, чтобы оформить свою стратегию в один красивый слайд. Его можно будет распечатать в переговорке или даже поставить на заставку корпоративных ноутбуков.",
+    "created": "2024-06-07T18:53:23.770Z",
+    "updated": "2024-06-08T09:03:12.251Z",
+    "publish": "2024-06-07T18:53:23.769Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 103,
+  "fields": {
+    "title": "Разработка Web API на Django с помощью Django REST framework: от создания моделей до тестирования",
+    "slug": "razrabotka-web-api-na-django-s-pomoshchiu-django-rest-framework-ot-sozdaniia-modelei-do-testirovaniia",
+    "body": "Django REST framework (DRF) — это мощный и гибкий инструмент для создания Web API на основе Django. Он предоставляет удобные средства для создания RESTful API, поддерживает аутентификацию, авторизацию, сериализацию, валидацию и другие функции.\r\n\r\nВ этой статье мы рассмотрим, как использовать Django REST framework для создания Web API на базе Django.\r\n\r\nШаг 1: Установка Django REST framework\r\nПервым шагом является установка Django REST framework. Вы можете установить его с помощью pip:\r\n\r\npip install djangorestframework\r\nШаг 2: Создание проекта Django\r\nДля создания проекта Django используйте команду:\r\n\r\ndjango-admin startproject myproject\r\nШаг 3: Создание приложения Django\r\nСоздайте приложение Django с помощью команды:\r\n\r\npython manage.py startapp myapp\r\nШаг 4: Настройка Django REST framework\r\nINSTALLED_APPS = [\r\n    ...\r\n    'rest_framework',\r\n    'myapp',\r\n]\r\nДобавьте REST framework middleware в MIDDLEWARE в файле settings.py:\r\n\r\nMIDDLEWARE = [\r\n    ...\r\n    'rest_framework.middleware.AuthenticationMiddleware',\r\n    'rest_framework.middleware.AuthorizationMiddleware',\r\n]\r\nШаг 5: Создание модели Django\r\nОпределите модель Django в файле models.py вашего приложения:\r\n\r\nfrom django.db import models\r\n\r\nclass Product(models.Model):\r\n    name = models.CharField(max_length=100)\r\n    description = models.TextField()\r\n    price = models.DecimalField(max_digits=10, decimal_places=2)\r\n    created_at = models.DateTimeField(auto_now_add=True)\r\n    updated_at = models.DateTimeField(auto_now=True)\r\n\r\n    def __str__(self):\r\n        return self.name\r\nШаг 6: Создание сериализатора Django REST framework\r\nОпределите сериализатор Django REST framework в файле serializers.py вашего приложения:\r\n\r\nfrom rest_framework import serializers\r\nfrom myapp.models import Product\r\n\r\nclass ProductSerializer(serializers.ModelSerializer):\r\n    class Meta:\r\n        model = Product\r\n        fields = ['id', 'name', 'description', 'price', 'created_at', 'updated_at']\r\nШаг 7: Создание представления Django REST framework\r\nОпределите представление Django REST framework в файле views.py вашего приложения:\r\n\r\nfrom rest_framework import generics\r\nfrom myapp.models import Product\r\nfrom myapp.serializers import ProductSerializer\r\n\r\nclass ProductList(generics.ListCreateAPIView):\r\n    queryset = Product.objects.all()\r\n    serializer_class = ProductSerializer\r\n\r\nclass ProductDetail(generics.RetrieveUpdateDestroyAPIView):\r\n    queryset = Product.objects.all()\r\n    serializer_class = Product\r\nШаг 8: Настройка маршрутов Django REST framework\r\nОпределите маршруты Django REST framework в файле urls.py вашего приложения:\r\n\r\nfrom django.urls import path\r\nfrom myapp.views import ProductList, ProductDetail\r\n\r\nurlpatterns = [\r\n    path('products/', ProductList.as_view(), name='product-list'),\r\n    path('products/<int:pk>/', ProductDetail.as_view(), name='product-detail'),\r\n]\r\nШаг 9: Запуск приложения Django\r\nЗапустите приложение Django с помощью команды:\r\n\r\npython manage.py runserver\r\nШаг 10: Тестирование Web API\r\nОткройте веб-браузер и перейдите по адресу http://127.0.0.1:8000/products/. Вы должны увидеть список всех продуктов.\r\n\r\nЧтобы создать новый продукт, отправьте POST-запрос на http://127.0.0.1:8000/products/ с данными в формате JSON:\r\n\r\n{\r\n    \"name\": \"Product 1\",\r\n    \"description\": \"Description for Product 1\",\r\n    \"price\": 10.99\r\n}\r\nЧтобы получить детали конкретного продукта, отправьте GET-запрос на http://127.0.0.1:8000/products/1/, где 1 - идентификатор продукта.\r\n\r\nЧтобы обновить продукт, отправьте PUT-запрос на http://127.0.0.1:8000/products/1/ с данными в формате JSON:\r\n\r\n{\r\n    \"name\": \"Updated Product 1\",\r\n    \"description\": \"Updated Description for Product 1\",\r\n    \"price\": 12.99\r\n}\r\nЧтобы удалить продукт, отправьте DELETE-запрос на http://127.0.0.1:8000/products/1/.\r\n\r\nВ этой статье мы рассмотрели, как использовать Django REST framework для создания Web API на базе Django. Django REST framework предоставляет удобные средства для создания RESTful API, поддерживает аутентификацию, авторизацию, сериализацию, валидацию и другие функции. С его помощью вы можете быстро и легко создавать мощные и гибкие Web API на базе Django.",
+    "created": "2024-06-07T18:54:02.824Z",
+    "updated": "2024-06-08T09:02:43.265Z",
+    "publish": "2024-06-07T18:54:02.823Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 104,
+  "fields": {
+    "title": "Python Высокоуровневый язык программирования",
+    "slug": "python-vysokourovnevyi-iazyk-programmirovaniia",
+    "body": "Эта статья не будет полезна матерым дата-сатанистам, но может быть полезна менеджерам, которые хотят отследить повторяемость похожих задач, или как я – похожих технических неполадок.\r\n\r\nЗдесь начинаем разбирать анализ текстовых данных. По-разному «от руки» написанных отчетов о причинах возникновения инцидентов.\r\n\r\nНезначительные ошибки в системе или нестабильное соединение от одного из провайдеров, могут на первый взгляд казаться мелочами. Однако, если такие «маленькие» проблемы возникают с завидной регулярностью, это уже тревожный сигнал. Постоянные технические неполадки со стороны провайдера или регулярные проблемы с банковскими партнерами — это повод задуматься и пересмотреть условия сотрудничества.\r\n\r\nСегодня о том, как я пытаюсь выявлять паттерны возникновения Инцидентов, другими словами, искать мелкие Проблемы.\r\n\r\n\r\nДано:\r\n\r\nЕсть BI-система, хранящая информацию обо всех отчетах.\r\n\r\nОтчет довольно простой — форма с полями. Единственное интересующее нас поле называется «14. Причина молнии» и содержится в столбце 14 (как неожиданно) .xlsx файла.\r\n\r\nНайти: \r\n\r\nНа выходе я хочу видеть три столбца:\r\n\r\n1 столбец содержит порядковый номер проблемы;\r\n\r\n2 столбец содержит название проблемы;\r\n\r\n3 столбец содержит все номера схожих проблем.\r\n\r\nПускай Питончик будет возвращать мне result.csv файл, выводить на дашборд будем в другой раз.\r\n\r\nРешение:\r\n\r\nПоскольку нас интересует сущностное сравнение («проблемы сети» = «проблема с сетью»), шаги следующие:\r\n\r\nНам нужно убрать лишние слова, оставив лишь существительные, прилагательные, глаголы и наречия;\r\n\r\nСрезать стоп-слова (иметь возможность убирать лишние слова, пускай хранятся в текстовом файле);\r\n\r\nСрезать приставки, суффиксы — достаточно лемматизировать слова;\r\n\r\nЕсть еще пункт, который я пока не реализовал — добавить поиск по  ключевым словам. Они будут лежать в том же репозитории, txt-файлом. Нам следует научить скрипт тому, что ключевые слова важнее остальных совпадений, чтобы была возможность влиять на агрегацию важных для нас инцидентов.\r\n\r\nТеперь по порядку:\r\n\r\nНам потребуются библиотеки:\r\n\r\nimport os\r\nimport pandas as pd\r\nfrom sklearn.feature_extraction.text import TfidfVectorizer\r\nfrom sklearn.metrics.pairwise import cosine_similarity\r\nfrom natasha import (\r\n    Segmenter,\r\n    MorphVocab,\r\n    NewsEmbedding,\r\n    NewsMorphTagger,\r\n    Doc\r\n)\r\n“os” для работы с операционной системой.\r\n\r\n“pandas” для работы с данными в формате DataFrame.\r\n\r\n“TfidfVectorizer” и “cosine_similarity” из “sklearn” для обработки текста и вычисления схожести.\r\n\r\n“natasha” для лемматизации текста на русском языке.\r\n\r\nЗагружаем явным образом стоп-слова:\r\n\r\ndef load_stopwords(filepath):\r\n    with open(filepath, 'r', encoding='utf-8') as file:\r\n        stopwords = file.read().splitlines()\r\n    return set(stopwords)\r\nЭта функция открывает файл с заданным filepath, читает стоп-слова (одно на строку) и возвращает их в виде множества для быстрого поиска.\r\n\r\nВводим функцию лемматизации текста:\r\n\r\nЭта функция принимает текст, сегментирует его на токены, тегирует их морфологическими тегами, лемматизирует каждый токен, исключает стоп-слова и возвращает лемматизированный текст.\r\n\r\ndef lemmatize_text(text, morph_vocab, segmenter, morph_tagger, stopwords):\r\n    doc = Doc(text)\r\n    doc.segment(segmenter)\r\n    doc.tag_morph(morph_tagger)\r\n    lemmas = []\r\n    for token in doc.tokens:\r\n        token.lemmatize(morph_vocab)\r\n        if token.lemma not in stopwords:\r\n            lemmas.append(token.lemma)\r\n    return ' '.join(lemmas)\r\nОсновная функция анализа схожих проблем (указанных причин инцидента):\r\ndef analyze_similar_problems(file_path, stopwords_path, output_path='result.csv'):\r\n    df = pd.read_excel(file_path)\r\n    df = df.dropna(subset=[df.columns[1], df.columns[13]])\r\nЗдесь данные загружаются из .xlsx файла с помощью pandas. Затем удаляются строки, в которых отсутствуют номера инцидентов или описания причин (столбцы 2 и 14). Во втором столбце у нас порядковый номер молнии, как правило, это четырехзначное число, в 14 – сам текст.\r\n\r\nЗагружаем стоп-слова из указанного файла с помощью функции load_stopwords.\r\n\r\nstopwords = load_stopwords(stopwords_path)\r\nИнициализируем необходимые компоненты Natasha для сегментации и лемматизации текста и Лемматизация текста в 14-м столбце. \r\n\r\nsegmenter = Segmenter()    \r\nmorph_vocab = MorphVocab()    \r\nemb = NewsEmbedding()    \r\nmorph_tagger = NewsMorphTagger(emb)\r\ndf['Лемматизированный текст'] = df[df.columns[13]].apply(        \r\nlambda text: lemmatize_text(str(text), morph_vocab, segmenter, morph_tagger, stopwords)    \r\n)\r\nТеперь для каждого текста вызывается функция lemmatize_text, результат сохраняем в новом столбце Лемматизированный текст.\r\n\r\nОсновная магия: преобразование текста в векторы с использованием TF-IDF и вычисление косинусного расстояния между всеми парами записей.\r\nvectorizer = TfidfVectorizer()    \r\ntfidf_matrix = vectorizer.fit_transform(df['Лемматизированный текст'])\r\ncosine_similarities = cosine_similarity(tfidf_matrix, tfidf_matrix)\r\nСоздается объект “TfidfVectorizer”, который преобразует лемматизированный текст в матрицу TF-IDF.\r\n\r\nС помощью cosine_similarity вычисляется косинусное расстояние между всеми парами текстов в TF-IDF матрице.\r\n\r\nДалее создаём пустой DataFrame для хранения результатов:\r\n\r\nresult_df = pd.DataFrame(columns=['Порядковый номер', 'Название проблемы', 'Схожие проблемы'])\r\nЗаполнение таблицы результатами:\r\n\r\nДля каждой строки в исходном DataFrame сравниваются косинусные схожести с другими строками. Если схожесть выше заданного порогового значения (0.5), номер инцидента добавляется в список схожих проблем. Затем для каждой строки создается запись в “result_df” с указанием номера проблемы, названия проблемы и номеров схожих проблем.\r\n\r\nfor i in range(len(df)):\r\n  similarities = []\r\n  for j in range(len(df)):\r\n      if i != j and cosine_similarities[i][j] > 0.5:                 \r\n          similarities.append(df.iloc[j, 1])\r\n  result_df = pd.concat([result_df, pd.DataFrame({'Порядковый номер': [df.iloc[i, 1]],\r\n                                                  'Название проблемы': [df.iloc[i, 13]],\r\n                                                  'Схожие проблемы': [', \r\n                                                  '.join(map(str, similarities))]})], ignore_index=True)\r\nПолученный DataFrame “result_df” сохраняется в файл “result.csv”:\r\n\r\nresult_df.to_csv(output_path, index=False)\r\nЭтот блок кода запускает функцию “analyze_similar_problems”, если скрипт выполняется напрямую. Путь к файлу данных и путь к файлу стоп-слов передаются в качестве аргументов функции:\r\n\r\nif __name__ == '__main__':\r\n  file_path = 'your_data.xlsx'\r\n  stopwords_path = 'russian_stopwords.txt'\r\n  analyze_similar_problems(file_path, stopwords_path)\r\nВ результате получаем файл “result.csv” с корректным результатом. Прямо сейчас дальнейшая работа с ним устроена так: я копирую содержимое и добавляю в гугл-табличку, по которой и сужу о том, пора ли бить тревогу.\r\n\r\nОтвет:\r\n\r\nДанный скрипт позволяет довольно быстро, хоть и вручную, получить ответ на простой вопрос: «а такое у нас уже случалось?» при разборе очередного инцидента технического характера. \r\n\r\nСледующим шагом станет анализ инцидентов и отклонений онлайн (раз в сутки подгружать из базы описания проблем) и выведением на дашборд таблицы, ранж в которой можно применять по «количеству» и «времени».",
+    "created": "2024-06-07T18:55:09.428Z",
+    "updated": "2024-06-08T09:02:31.806Z",
+    "publish": "2024-06-07T18:55:09.427Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 110,
+  "fields": {
+    "title": "Celery: изучаем на реальных примерах ч.1",
+    "slug": "celery-izuchaem-na-realnykh-primerakh-ch1",
+    "body": "Лучший способ что-то понять - попробовать на практике, а лучшая практика - это реальные примеры. В этой статье мы разберем возможности Celery и применение основных параметров для управления задачами. Для начала пару слов про сам Celery.\r\n\r\nЗачем же нам Celery?\r\nCelery - это самый популярный инструмент для асинхронной обработки задач. Он позволяет выполнять задачи в фоновом режиме и гибко настраивать параметры для каждой задачи. Кроме того, Celery предоставляет возможности для планирования, работы с разными очередями и мониторинга выполнения задач.\r\n\r\nА теперь рассмотрим шесть базовых сценариев использования.\r\n\r\nСценарий 1: Выполнение задачи в фоне\r\nНачнем с самого простого - обычное выполнение задачи в фоновом режиме. Представим, что нам нужно сгенерировать тяжелый отчет по запросу и синхронное выполнение здесь не подходит (слишком долго). Поэтому мы отправляем запрос на сервер для его генерации, после чего задача встает в очередь. Когда очередь дойдет до нашей задачи - начнется генерация отчета. Теперь перейдем к реализации.\r\n\r\nСоздание асинхронной задачи начинается с определения функции, которая будет выполняться асинхронно. Для этого используем декоратор @task\r\n\r\nimport time\r\nfrom celery import Celery\r\n\r\napp = Celery('myapp', broker='pyamqp://guest@localhost//')\r\n\r\n@app.task\r\ndef generate_report_task(arg1, arg2):\r\n    print(\"Start generating report\")\r\n    time.sleep(10)\r\n    print(\"Report generated\")\r\nОсталось только запустить. Есть три способа это сделать: apply_async, delay и обычный вызов call.\r\n\r\napply_async - это метод, который предоставляет максимальную гибкость при запуске задачи и принимает большое количество аргументов.\r\n\r\ngenerate_report_task.apply_async(args=[arg1_value], kwargs={'key': 'value'})\r\ndelay - в отличие от apply_async имеет ограниченный список принимаемых аргументов. Такой способ запуска мы рассматриваем, когда нужно просто запустить задачу без необходимости передавать именованные аргументы и другие параметры.\r\n\r\ngenerate_report_task.delay(arg1_value, arg2_value)\r\nЭтот метод часто используется, когда задача принимает всего несколько аргументов и нам нужно просто её запустить.\r\n\r\nПоследний способ - это обычный вызов функции. В таком случае задача будет выполнена сразу же, а не назначена в очередь.\r\n\r\ngenerate_report_task(arg1_value, arg2_value)\r\nСценарий 2: Выполнить задачу через час\r\nСледующая задача - пользователь создал статью и хочет опубликовать её через один час. Настало время узнать об аргументах, которые принимает apply_async.\r\n\r\nВариантов здесь - два. Самый простой - аргумент countdown - в переводе \"обратный отсчёт\". Он позволяет задать время в секундах, через которое задача станет доступна для выполнения. Как раз то, что нам нужно!\r\n\r\nfrom datetime import datetime\r\n\r\n@app.task\r\ndef publish_article(arg1, arg2):\r\n    print(f\"Publish time: {datetime.now()}\")\r\n\r\npublish_article_after = 60 * 60 # 60 минут\r\nresult = publish_article.apply_async(args=[article_id], countdown=publish_article_after)\r\nВажно для Redis Backend\r\nВажно для RabbitMQ Backend\r\nСценарий 3: Выполнить задачу завтра в полдень\r\nТеперь наш пользователь хочет выложить статью завтра в полдень. Эта ситуация очень похожа на предыдущую и мы могли бы использовать countdown. Но он лучше подходит для небольших промежутков времени - через минуту или пол часа. А для назначения задачи на конкретное время намного удобнее использовать аргумент eta. Он расшифровывается как Estimated Time of Arrival, что в переводе \"Ожидаемое время прибытия\".\r\n\r\nЗдесь есть две важных детали:\r\n\r\nпри использовании Redis отложенные с помощью eta задачи столкнутся с той же проблемой, что и countdown из-за VISIBILITY_TIMEOUT.\r\n\r\neta - это не точное время, в которое будет выполнена задача. Указывая время, мы говорим Celery - \"задача должна быть выполнена не раньше этого времени\". Как только это время наступит - задача будет выполнена в порядке очереди и будет зависеть от количества задач в очереди.\r\n\r\nВот пример:\r\n\r\nfrom datetime import datetime\r\n\r\n# Получим время для примера. В нормальной ситуации - \r\n# нам придет аргумент с временем публикации\r\nnow = datetime.now()\r\ntomorrow = now + timedelta(days=1)\r\n\r\npublish_article_datetime = datetime(tomorrow.year, tomorrow.month, tomorrow.day, 12, 0, 0)\r\n\r\nresult = publish_article.apply_async(args=[\"some_value\"], eta=publish_article_datetime)\r\nСценарий 4: Выставить максимальное время выполнения задачи\r\nРазберем на примере задачи по генерации отчёта. Мы знаем, что она не должна занимать больше часа (для примера). Если такое вдруг случилось - скорее всего что-то не так. Необходимо завершить задачу по таймауту, а потом - разобраться в причинах.\r\n\r\nДля этого мы будем использовать аргументы soft_time_limit и time_limit. После наступления soft_time_limit в задаче будет возбуждено исключение SoftTimeLimitExceeded. Если задача не завершилась и наступает time_limit, выполнение задачи будет приостановлено.\r\n\r\nПервый вариант - передать аргументы в apply_async\r\n\r\n@app.task()\r\n\r\ndef generate_report():\r\n\r\n    try:\r\n        time.sleep(60 * 2)\r\n    except SoftTimeLimitExceeded:\r\n        print(\"Soft time limit exception\")\r\n        time.sleep(60 * 3)\r\n\r\nsoft_time_limit = 60 * 1\r\n\r\nhard_time_limit = 60 * 2\r\n\r\nresult = my_task.apply_async(args=[some_value], soft_time_limit=soft_time_limit, time_limit=hard_time_limit )\r\n\r\nВторой вариант - сразу указать ограничения в аргументах декоратора.\r\n\r\n@app.task(time_limit=60 * 60, soft_time_limit=59 * 60) # 60/59 min\r\ndef generate_report():\r\n    try:\r\n        time.sleep(60 * 2)\r\n    except SoftTimeLimitExceeded:\r\n        print(\"Soft time limit exception\")\r\n        time.sleep(60 * 3)\r\n\r\nresult = my_task.apply_async(args=[some_value])\r\nВ результате, после запуска задачи через одну минуту мы увидим в консоли \"Soft time limit exception\", а еще через минуту задача будет принудительно завершена.\r\n\r\nСценарий 5: Отмена выполнения задачи по истечение времени\r\nВозможна ситуация, когда определенная задача теряет свою актуальность, если не выполнена в течение какого то времени. Снова рассмотрим на примере генерации отчёта. Пользователь отправил запрос на генерацию отчёта. Задача попала в очередь и за час ни один обработчик не смог её обработать. В таком случае нам нужно отменить \"просроченную\" задачу. Для этого применяется аргументexpires. Он принимает либо число в секундах, либо объект datetime.\r\n\r\nНапример:\r\n\r\n# Генерация будет отменена через час\r\ngenerate_report.apply_async((10, 10), expires=3600)\r\n\r\n# Генерация будет отменена, если через день задача не начнет выполняться\r\nfrom datetime import datetime, timedelta, timezone\r\ngenerate_report.apply_async((10, 10), kwargs,\r\n                expires=datetime.now(timezone.utc) + timedelta(days=1))\r\nСценарий 6: Повторное выполнение задачи при возникновении ошибки\r\nПо какой-то причине в задаче может возникнуть ошибка. В таком случае нам может понадобится механизм повторного выполнения (retry).\r\n\r\nДля начала разберем аргументы, которые помогут нам с детальной настройкой. Декоратор @app.task принимает:\r\n\r\ndefault_retry_delay[int]: время до следующей попытки в секундах.\r\n\r\nmax_retries[int]: максимальное количество попыток.\r\n\r\nautoretry_for[list | tuple]: Принимает список или кортеж с исключениями. Автоматический повтор при возникновении ошибки из переданного списка.\r\n\r\nretry_backoff[bool|int]:при включении, задержка будет расти экспотенциально. Первая повторная попытка будет иметь задержку 1 секунду, вторая повторная попытка будет иметь задержку 2 секунды, третья будет иметь задержку в 4 секунды, четвертая будет иметь задержку в 8 секунд,\r\n\r\nretry_backoff_max[int]: устанавливает максимальную задержку в секундах. Рекомендуется использовать всегда при использовании retry_backoff, чтобы избежать слишком больших задержек.\r\n\r\nretry_jitter[bool]: задает случайную задержку. Принцип расчета new_num_of_seconds = random.randrange(retry_backoff + 1) . Соответственно время задержки будет случайным числом от 0 до retry_backoff\r\n\r\nТеперь перейдем к коду. Есть два основных способа задействовать механизм retry.\r\nПервый - использовать метод .retry(). Мы можем вызывать его по какому-либо условию.\r\n\r\n@app.task(default_retry_delay=30, max_retries=3) # 60/59 min\r\ndef generate_report():\r\n    some_condition = some_logic()\r\n    if some_condition:\r\n      generate_report.retry()\r\n\r\nresult = my_task.apply_async(args=[some_value])\r\nВторой способ - это передать список ошибок при которых нужно выполнить задачу повторно.\r\n\r\n@celery_app.task(autoretry_for=(GenerateReportError, SaveReportError, ), default_retry_delay=30,  max_retries=5)\r\ndef generate_report():\r\n  ...\r\nЗаключение\r\nОтлично! Мы с вами рассмотрели шесть основных сценариев. Надеюсь, что это послужит крепкой основой для ваших будущих задач и дальнейшего погружения в Celery.\r\n\r\nСтоит отметить, что в этой статье мы не касались вопросов, связанных с периодическими задачами и использованием celery beat. Это широкая тема, которая заслуживает отдельной статьи, и я надеюсь подробно рассмотреть ее в будущем материале.",
+    "created": "2024-06-07T19:13:22.581Z",
+    "updated": "2024-06-08T09:02:24.105Z",
+    "publish": "2024-06-07T19:13:22.580Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 111,
+  "fields": {
+    "title": "Маркдаун",
+    "slug": "markdaun",
+    "body": "**Пам-парам**\r\n***Пум-Пурум***\r\n*Пам-Пум-Пам*\r\n\r\n\r\n\r\n\r\n\r\n\r\n## Заголовок",
+    "created": "2024-06-07T19:14:10.754Z",
+    "updated": "2024-06-07T19:16:45.553Z",
+    "publish": "2024-06-07T19:14:10.754Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 112,
+  "fields": {
+    "title": "Как установить линкус на винду",
+    "slug": "kak-ustanovit-linkus-na-vindu",
+    "body": "Рассказываем, как установить Linux Ubuntu на Windows бесплатно с помощью VirtualBox и зачем вообще это делать.\r\n\r\nОдин из самых простых способов установить изолированную операционную систему Linux с графическим окружением, особенно если вы работаете на Windows версии ниже 10 — воспользоваться сторонним бесплатным сервисом VirtualBox.\r\n\r\nЧто нужно для установки:\r\n\r\nИнсталлятор Oracle VM VirtualBox для Windows Hosts. Ссылка на скачивание: Download Oracle VM VirtualBox\r\nОбраз операционной системы Ubuntu Linux в формате ISO. Ссылка на скачивание: Download Ubuntu Desktop\r\nЧитайте также:\r\nИзучите необходимый минимум Linux, чтобы быть продуктивными\r\n\r\nДля начала нужно установить и запустить приложение VirtualBox.\r\n\r\nДля начала нужно установить и запустить приложение VirtualBox\r\n\r\nНажимаем кнопку «Создать», находим в списке тип операционной системы «Linux». Лучше всего выбрать стандартную версию «Ubuntu» 64 битной архитектуры, а название для нее можно ввести любое.\r\n\r\nУкажите тип и имя ОС\r\n\r\nУказываем объем оперативной памяти, выделенной под виртуальную систему. Рекомендованный объем составляет 1024 MB.\r\n\r\nУкажите объем оперативной памяти\r\n\r\nУказываем объем дискового пространства, выделенного под виртуальную систему. Рекомендованный объем — 10 GB, но вы можете указать больше, так как новые версии могут потребовать много пространства для установки.\r\n\r\nУкажите объем жесткого диска под операционную систему\r\n\r\nТип виртуального жесткого диска можно оставить как есть — VDI (VirtualBox Disk Image).\r\n\r\nУкажите тип виртуального жесткого диска\r\n\r\nФормат хранения данных нужно выбрать, исходя из личных предпочтений. Динамический виртуальный жесткий диск растет по мере заполнения, а фиксированный создается сразу такого размера, который был указан на предыдущем шаге.\r\n\r\nУкажите формат хранения данных\r\n\r\nИмя и размер файла можно оставить без изменений, поэтому можно сразу нажать на кнопку «Создать».\r\n\r\nСоздайте виртуальный диск\r\n\r\nЕсли вы все сделали правильно, у вас появится виртуальная машина, на которой пока нет операционной системы. Для того чтобы ее установить, нужно скачать образ Ubuntu Linux с официальной страницы загрузки.\r\n\r\nНажатие на кнопку «Запустить» приведет к появлению диалогового окна с предложением указать путь до скаченного ISO-образа. Сделайте это и нажмите кнопку «Продолжить».\r\n\r\nУстанавливаем Ubuntu\r\n\r\nВиртуальная машина автоматически выполнит часть процессов, но в некоторых операциях все же потребуется участие пользователя.\r\n\r\nВыберите языковую поддержку в списке слева и нажмите «Установить Ubuntu».\r\n\r\nВыбираем язык\r\n\r\nМожно загрузить все обновления сразу на этапе установки.\r\n\r\nСкачиваем все обновления\r\n\r\nБез особых опасений выбираем пункт «Стереть диск и установить Ubuntu» и двигаемся дальше.\r\n\r\nСтираем виртуальный диск и ставим Ubuntu\r\n\r\nЗаполните поля и выберите режим входа в систему.\r\n\r\nЛогинимся\r\n\r\nДалее начнется процедура разметки диска, переноса файлов, установка обновлений и другие процессы, которые не потребуют прямого участия пользователя.\r\n\r\nПереносим файлы в автоматическом режиме\r\n\r\nВ конце установки виртуальный компьютер перезагрузится, и вы попадете уже в установленную среду Ubuntu Linux.\r\n\r\nНа этом этапе нужно еще установить так называемые «Дополнения гостевой ОС». Они содержат драйверы и другие системные файлы, необходимые для повышения производительности и обеспечения дополнительных функциональных возможностей между виртуальной и гостевой операционной системой.\r\n\r\nВыберите пункт «Устройства» в программе VirtualBox, подпункт «Подключить образ диска Дополнений гостевой ОС…» и дождитесь, пока программа предложит вам открыть приложение для автоматического запуска с виртуального привода.\r\n\r\nНастраиваем дополнения\r\n\r\nВиртуальная ОС Ubuntu Linux установлена и готова к работе. При этом если на каком-то этапе что-то пошло не так, то подробнее инструкцию можно разобрать в официальной документации к Ubuntu.",
+    "created": "2024-06-07T19:19:26.499Z",
+    "updated": "2024-06-08T08:53:58.343Z",
+    "publish": "2024-06-07T19:19:26.499Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 113,
+  "fields": {
+    "title": "Полное руководство по модулю asyncio в Python. Часть 1",
+    "slug": "polnoe-rukovodstvo-po-moduliu-asyncio-v-python-chast-1",
+    "body": "Python-модуль asyncio позволяет заниматься асинхронным программированием с применением конкурентного выполнения кода, основанного на корутинах. Хотя этот модуль имеется в Python уже много лет, он остаётся одним из самых интересных механизмов языка. Но asyncio, при этом, можно назвать ещё и одним из модулей, которые вызывают больше всего недоразумений. Дело в том, что начинающим разработчикам бывает трудно приступить к использованию asyncio.\r\n\r\n\r\nПеред вами — подробное и всестороннее руководство по использованию модуля asyncio в Python. В частности, здесь будут рассмотрены следующие основные вопросы:\r\n\r\nОпределение, создание и запуск корутин.\r\n\r\nАсинхронное программирование в Python.\r\n\r\nОрганизация неблокирующего ввода-вывода.\r\n\r\nСредства конкурентного программирования, используемые при работе с корутинами.\r\n\r\nОригинал этого руководства включает в себя 26 разделов. Сегодня, в первой части перевода, мы предлагаем вашему вниманию разделы №1 и 2.\r\n\r\n1. Что такое асинхронное программирование\r\nАсинхронное программирование — это концепция программирования, при применении которой запуск длительных операций происходит без ожидания их завершения и не блокирует дальнейшее выполнение программы.\r\n\r\nВместо этого запросы и вызовы функций производятся и выполняются в фоновом режиме, результаты их работы оказываются доступными не сразу, а через некоторое время. Это позволяет вызывающей стороне решать другие задачи, а результаты, ожидаемые после выполнения асинхронных вызовов, обрабатывать позже — либо тогда, когда они будут готовы, либо тогда, когда они понадобятся вызывающей стороне.\r\n\r\nПрежде чем переходить к освоению asyncio — разберёмся с основами асинхронного программирования.\r\n\r\n1.1. Асинхронные задачи\r\nСлово «асинхронный» используют для описания неких процессов, не совпадающих друг с другом во времени. Его противоположность — слово «синхронный», используемое для описания чего-либо, точно совпадающего во времени.\r\n\r\nАсинхронный — не одновременный или не параллельный во времени.\r\n\r\nСловарь Merriam-Webster\r\n\r\nВ программировании смысл асинхронности в том, что когда делается запрос на выполнение некоего действия, это действие выполняется не в тот момент, когда делается запрос, а позже.\r\n\r\nАсинхронный: раздельное выполнение потоков, которые могут выполняться конкурентно в любом порядке относительно друг друга, является асинхронным.\r\n\r\nThe Art of Concurrency, 2009, с. 265\r\n\r\nНапример, можно выполнять асинхронные вызовы функций.\r\n\r\nПри выполнении асинхронного вызова функции мы делаем запрос на выполнение вызова функции, но не ждём завершения этого вызова. А состояние вызванной функции или результаты её работы мы узнаём позже.\r\n\r\nАсинхронный вызов функции — это запрос на вызов функции, выполняемый неким образом в некий момент времени, при этом вызывающая сторона, после выполнения вызова, может продолжать работу и решать другие задачи.\r\n\r\nПолучается, что вызов функции будет выполнен в некий момент времени, в фоновом режиме, а программа может решать какие-то задачи или реагировать на некие события.\r\n\r\nВ этом — вся суть. Мы не осуществляем контроль над тем, как или когда будет обработан запрос. Мы лишь сообщаем системе о том, что нам нужно, чтобы запрос был бы обработан тогда, когда наша программа занимается какими-то другими делами.\r\n\r\nВыполнение асинхронного вызова функции часто приводит к предоставлении вызывающей стороне некоего идентификатора запроса, который вызывающая сторона может использовать для того, чтобы проверить состояние запроса или получить результаты. Такие идентификаторы часто называют объектами, ждущими результата выполнения задачи (future, объект Future, преднамеченное значение, «футура»).\r\n\r\nОбъект future: идентификатор асинхронного вызова функции, позволяющий проверять состояние вызова и получать результаты работы функции.\r\n\r\nКомбинацию асинхронного вызова функции и объекта Future часто называют асинхронной задачей. Это так из-за того, что такая комбинация даёт больше возможностей, чем обычный вызов функции. Например — позволяет отменять запрос и выполнять другие действия.\r\n\r\nАсинхронная задача: этот термин используется для обозначения сущности, представляющей собой объединение асинхронного вызова функции и порождённого этим вызовом объекта Future.\r\n\r\n1.2. Асинхронное программирование\r\nФормирование асинхронных задач и выполнение асинхронных вызовов функций называют асинхронным программированием.\r\n\r\nИтак — что такое асинхронное программирование? Его смысл в том, что особые длительные задачи можно запустить в фоне, отдельно от главного приложения. Вместо того чтобы блокировать весь остальной код приложения, заставляя его ждать завершения этих длительных задач, система получает возможность выполнять другие действия, не зависящие от этих задач. Затем, после завершения длительной задачи, мы получим уведомление об этом и сможем обработать результат.\r\n\r\nPython Concurrency with asyncio, 2022, с. 3\r\n\r\nАсинхронное программирование: использование особых приёмов асинхронного выполнения кода — таких, как выполнение асинхронных задач или вызовов функций.\r\n\r\nПриёмы асинхронного программирования используются, в основном, в системах, предусматривающих применение неблокирующих операций ввода/вывода. Это, например, чтение данных из сокета или их запись в сокет при работе с другими процессами или системами.\r\n\r\nКогда мы, в неблокирующем режиме, пишем данные в сокет, мы можем просто инициировать соответствующую операцию, действуя по принципу «выстрелил и забыл», а наше приложение может перейти к выполнению других задач.\r\n\r\nPython Concurrency with asyncio, 2022, с. 18\r\n\r\nНеблокирующий ввод/вывод — это когда программа запрашивает у системы чтение или запись неких данных, а соответствующие операции выполняются асинхронно. Вызывающей стороне не нужно ждать завершения операции перед переходом к другим задачам.\r\n\r\nОперации чтения и записи выполняются тем или иным образом (например — операционной системой, или некими системами, построенными на её основе), а сведения о состоянии операций и/или данные, полученные в ходе их выполнения, вызывающая сторона получает позднее, как только они будут готовы, или когда вызывающая сторона готова будет их принять.\r\n\r\nНеблокирующая обработка ввода/вывода: выполнение операций ввода/вывода посредством асинхронных запросов и ответов, а не таким образом, который предусматривает ожидание завершения операции.\r\n\r\nТаким образом — можно видеть, как неблокирующий ввод/вывод связан с асинхронным программированием. На самом деле, мы либо используем неблокирующий ввод/вывод через механизмы асинхронного программирования, либо неблокирующий ввод/вывод реализован посредством таких механизмов.\r\n\r\nКомбинация неблокирующего ввода/вывода с асинхронным программированием так распространена, что её обычно называют асинхронным вводом/выводом.\r\n\r\nАсинхронный ввод/вывод: условное сокращение, которое означает комбинацию асинхронного программирование и неблокирующей обработки ввода/вывода.\r\n\r\nТеперь давайте разберёмся с асинхронным программированием в Python.\r\n\r\n1.3. Асинхронное программирование в Python\r\nВ широком смысле асинхронное программирование в Python — это выполнение запросов без блокировки основной программы ради ожидания их завершения.\r\n\r\nАсинхронные механизмы в Python можно реализовать разными способами, но при этом некоторые из них лучше других соответствуют модели конкурентности Python.\r\n\r\nПервый и наиболее очевидный подход к разработке асинхронных Python-программ заключается в применении модуля asyncio. Этот модуль напрямую предлагает программисту среду для асинхронного программирования, в которой используется синтаксическая конструкция async/await и неблокирующий ввод/вывод с применением сокетов и подпроцессов.\r\n\r\nНазвание модуля asyncio — это сокращение от asynchronous I/O (асинхронный ввод/вывод). Это — Python-библиотека, которая позволяет нам выполнять код, используя модель асинхронного программирования. Такой подход даёт возможность одновременно обрабатывать несколько операций ввода/вывода, а приложение при этом не теряет возможности реагировать на внешние воздействия.\r\n\r\nPython Concurrency with asyncio, 2022, с. 3\r\n\r\nВсё это реализовано с использованием корутин. Они выполняются в цикле событий, а сам он выполняется в единственном потоке.\r\n\r\nAsyncio: асинхронная среда программирования, представленная в Python благодаря модулю asyncio.\r\n\r\nЕсли говорить о других подобных механизмах — то в Python можно работать с потоками и процессами, которые способны асинхронно выполнять задачи.\r\n\r\nНапример, один поток может запустить другой поток для выполнения вызова функции, а после этого продолжить выполнять другие действия. Операционная система запланирует и выполнит второй поток в некий момент времени, а первый поток может, по желанию программиста, проверить состояние задачи, или может этого не делать.\r\n\r\nПотоки асинхронны, то есть — они могут работать с разными скоростями, и любой поток может в любой момент остановиться на время, длительность которого заранее неизвестна.\r\n\r\nThe Art of Multiprocessor Programming, 2021, с. 76\r\n\r\nА точнее — Python даёт в наше распоряжение пулы потоков и процессов, основанные на концепции исполнителей. Реализовано это, соответственно, посредством классов ThreadPoolExecutor и ProcessPoolExecutor.\r\n\r\nЭти классы используют одинаковый интерфейс и поддерживают асинхронные задачи с помощью метода submit(), который возвращает объект Future.\r\n\r\nМодуль concurrent.futures предоставляет высокоуровневый интерфейс для асинхронного выполнения вызываемых объектов. Асинхронное выполнение объектов может быть произведено с помощью потоков — посредством ThreadPoolExecutor, или с помощью отдельных процессов — посредством ProcessPoolExecutor.\r\n\r\nconcurrent.futures — Launching parallel tasks\r\n\r\nМодуль multiprocessing тоже предоставляет пулы воркеров, использующие процессы и потоки, посредством классов Pool и ThreadPool. Это — предшественники классов ThreadPoolExecutor и ProcessPoolExecutor.\r\n\r\nВозможности этих классов описываются в терминах воркеров, асинхронно выполняющих задачи. Они явным образом предоставляют синхронные (блокирующие) и асинхронные (неблокирующие) версии каждого метода для выполнения задач.\r\n\r\nНапример, можно запустить функцию, предназначенную для особого случая, либо сделав это синхронно, воспользовавшись методом apply(), либо асинхронно — с помощью метода apply_async().\r\n\r\nОбъект пула процессов управляет пулом процессов-воркеров, которым можно отправлять задания. Он поддерживает асинхронную выдачу результатов с использованием тайм-аутов или коллбэков и имеет параллельную реализацию метода map().\r\n\r\nmultiprocessing — Process-based parallelism\r\n\r\nСуществует один аспект асинхронного Python-программирования, который менее жёстко связан с реализацией конкурентности в Python.\r\n\r\nНапример, Python-процессы асинхронно принимают или обрабатывают сигналы. Сигналы — это, по своей сути, асинхронные события, отправляемые из одних процессов другим процессам.\r\n\r\nЭтот механизм, в основном, поддерживается благодаря модулю signal.\r\n\r\nТеперь, когда мы разобрались с тем, что такое асинхронное программирование, поближе присмотримся к asyncio.\r\n\r\n2. Что такое asyncio\r\nВ Python понятие «asyncio», в широком смысле, означает возможность реализации механизмов асинхронного программирования с использованием корутин.\r\n\r\nЕсли говорить конкретнее, то понятие «asyncio» имеет отношение к двум элементам:\r\n\r\nДобавление модуля asyncio в стандартную библиотеку Python в Python 3.4.\r\n\r\nДобавление выражений async/await в языковой арсенал Python в Python 3.5.\r\n\r\nВсё это вместе — модуль и изменения, внесённые в язык — обеспечило возможность разработки Python-программ, поддерживающих конкурентное выполнение кода, основанное на корутинах, позволило использовать неблокирующий ввод/вывод и механизмы асинхронного программирования.\r\n\r\nВ Python 3.4 появилась библиотека asyncio, а в Python 3.5 — ключевые слова async и await, позволяющие удобно работать с этой библиотекой. Эти новшества языка открыли дорогу так называемому «асинхронному программированию».\r\n\r\nUsing Asyncio in Python, 2020, с. VII\r\n\r\nРассмотрим подробнее эти два аспекта asyncio, начав с изменений, внесённых в язык.\r\n\r\n2.1. Изменения, внесённые в Python для добавления в язык поддержки корутин\r\nЯзыковые возможности Python изменились для того, чтобы приспособить язык к работе с модулем asyncio. Сделано это посредством добавления в Python новых выражений и типов данных.\r\n\r\nТочнее — язык изменился ради обеспечения стандартной поддержки корутин. А корутины, в свою очередь, являются компонентом системы конкурентного выполнения кода. Этот компонент используется в программах, в которых применяется модуль asyncio.\r\n\r\nКорутина — это функция, выполнение которой можно приостановить и возобновить.\r\n\r\nКорутина: корутины — это более общая форма подпрограмм. Подпрограммы имеют одну точку входа и одну точку выхода. А корутины поддерживают множество точек входа, выхода и возобновления их выполнения.\r\n\r\nPython glossary\r\n\r\nКорутину можно определить с использованием выражения async def. Она может принимать аргументы и возвращать значение — так же, как и функция.\r\n\r\nНапример:\r\n\r\n# определение корутины\r\nasync def custom_coro():\r\n    # ...\r\nВызов функции корутины создаёт объект корутины, в основе которого лежит новый класс. При этом функция корутины не выполняется.\r\n\r\n...\r\nсоздание объекта корутины\r\ncoro = custom_coro()\r\nКорутина может запустить другую корутину посредством выражения await.\r\n\r\nЭто выражение приостанавливает выполнение вызывающей стороны и планирует выполнение целевого объекта.\r\n\r\n...\r\nприостановить выполнение кода и запланировать выполнение целевого объекта\r\nawait custom_coro()\r\nАсинхронный итератор — это итератор, который выдаёт объекты, допускающие ожидание.\r\n\r\nАсинхронный итератор: объект, который реализует методы aiter() и anext(). Метод anext() должен возвращать объект, допускающий ожидание. Конструкция async for разрешает объекты, допускающие ожидание, возвращённые методом anext() асинхронного итератора до тех пор, пока он не вызовет исключение StopAsyncIteration.\r\n\r\nPython glossary\r\n\r\nАсинхронный итератор можно обойти, используя выражение async for.\r\n\r\n...\r\nобход асинхронного итератора\r\nasync for item in async_iterator:\r\n    print(item)\r\nПрименение этой конструкции не приводит к параллельному выполнению цикла for.\r\n\r\nВместо этого вызывающая корутина, которая выполняет цикл for, будет приостанавливаться и самостоятельно ожидать каждый объект, допускающий ожидание, полученный из итератора.\r\n\r\nАсинхронный менеджер контекста — это менеджер контекста, который может приостанавливать выполнение в своих методах enter и exit.\r\n\r\nAsynchronous Context Managers and «async with»\r\n\r\nВыражение async with используется для создания и использования асинхронных менеджеров контекста.\r\n\r\nВызывающая корутина приостановится и подождёт менеджер контекста до входа в блок менеджера и похожим образом поступит при выходе из блока менеджера контекста.\r\n\r\nЭто — сводка основных изменений, внесённых в Python для поддержки корутин.\r\n\r\nТеперь поговорим о модуле asyncio.\r\n\r\n2.2. Модуль asyncio\r\nМодуль asyncio даёт нам функции и объекты для разработки программ, основанных на корутинах с использованием парадигмы асинхронного программирования.\r\n\r\nВ частности, этот модуль поддерживает неблокирующую обработку ввода/вывода с использованием подпроцессов (для выполнения команд) и с использованием потоков (для программирования TCP-сокетов).\r\n\r\nAsyncio — это библиотека для написания конкурентного кода с использованием синтаксических конструкций async/await.\r\n\r\nasyncio — Asynchronous I/O\r\n\r\nЦентральной концепцией модуля asyncio является цикл событий.\r\n\r\nЭто — механизм, который выполняет программы, основанные на корутинах, и реализует кооперативную многозадачность корутин.\r\n\r\nЦикл событий — это база любого asyncio-приложения. Цикл событий выполняет асинхронные задачи и коллбэки, сетевые операции ввода/вывода, подпроцессы.\r\n\r\nEvent Loop\r\n\r\nЭтот модуль предоставляет и высокоуровневый, и низкоуровневый API.\r\n\r\nВысокоуровневый API предназначен для разработчиков Python-приложений. А низкоуровневый API — преимущественно для разработчиков фреймворков, но, в большинстве случаев, не для разработчиков приложений.\r\n\r\nБольшинство вариантов использования asyncio реализуются с использование высокоуровневого API, который даёт в распоряжение программистов инструменты для работы с корутинами, потоками, примитивами синхронизации, подпроцессами и очередями, предназначенными для разделения данных между корутинами.\r\n\r\nНизкоуровневый API — это основа высокоуровневого API, в его состав входят внутренние механизмы цикла событий, транспортные протоколы, политики и другие механизмы.\r\n\r\n…тут имеются низкоуровневые API для разработчиков библиотек и фреймворков.\r\n\r\nasyncio — Asynchronous I/O\r\n\r\nТеперь мы, в общих чертах, разобрались с тем, что такое asyncio, и с тем, что этот модуль предназначен для асинхронного программирования на Python.\r\n\r\nДалее — поговорим о том, что нужно принимать во внимание при использовании asyncio в своих Python-программах.",
+    "created": "2024-06-07T19:20:25.097Z",
+    "updated": "2024-06-08T08:53:44.567Z",
+    "publish": "2024-06-07T19:20:25.097Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 114,
+  "fields": {
+    "title": "Подумал и передумал",
+    "slug": "podumal-i-peredumal",
+    "body": "Бла-бла-бла",
+    "created": "2024-06-07T19:21:08.509Z",
+    "updated": "2024-06-07T19:21:08.509Z",
+    "publish": "2024-06-07T19:21:08.508Z",
+    "author": 1,
+    "status": "DF"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 115,
+  "fields": {
+    "title": "Как установить gettext на windows без головной боли",
+    "slug": "kak-ustanovit-gettext-na-windows-bez-golovnoi-boli",
+    "body": "Никак",
+    "created": "2024-06-07T19:21:59.195Z",
+    "updated": "2024-06-08T08:53:28.411Z",
+    "publish": "2024-06-07T19:21:59.194Z",
+    "author": 1,
+    "status": "DF"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 116,
+  "fields": {
+    "title": "Что же такое Django?",
+    "slug": "chto-zhe-takoe-django",
+    "body": "Что такое джанго\r\nДжанго - это специальный инструмент, который помогает разработчикам создавать веб-сайты и приложения. Он называется фреймворком, потому что предоставляет готовые инструменты и правила для работы с веб-сайтами.\r\n\r\nДжанго нужен для того, чтобы упростить процесс разработки веб-сайта. Вместо того, чтобы создавать каждую часть сайта с нуля, разработчики могут использовать Джанго, чтобы получить уже готовые компоненты и функциональность.\r\n\r\nДжанго имеет много полезных функций, которые помогают создавать веб-сайты:\r\n\r\nОн позволяет создавать красивые и интерактивные страницы, которые пользователи могут видеть в своих браузерах.\r\n\r\nОн облегчает работу с базой данных, где хранится информация о веб-сайте, такая как список товаров или информация о пользователях.\r\n\r\nОн помогает обрабатывать запросы от пользователей и отправлять им нужную информацию.\r\n\r\nОн имеет мощный административный интерфейс, который позволяет администраторам управлять содержимым веб-сайта без необходимости знать программирование.\r\n\r\nТаким образом, Джанго помогает разработчикам создавать веб-сайты более быстро и эффективно, предоставляя им готовые инструменты и структуру работы. Он широко используется для создания различных веб-сайтов, таких как блоги, интернет-магазины и социальные сети.\r\n\r\nЧто такое проект джанго\r\nДавай представим, что проект Django - это интернет-магазин, а приложения внутри этого проекта - это его различные части или функциональности.\r\n\r\nКогда мы говорим о проекте Django, давай вообразим, что это сам интернет-магазин в целом. В нем мы можем купить товары и просмотреть информацию о них.\r\n\r\nТеперь представьте, что у нас есть несколько разных приложений, которые делают разные вещи внутри этого интернет-магазина.\r\n\r\nОдно из таких приложений может быть \"Каталог товаров\". Здесь мы можем просмотреть список всех товаров, их названия, изображения и цены. Это как книжка с полным списком товаров в магазине.\r\n\r\nЕще одно приложение может быть \"Корзина покупок\". Здесь мы можем добавлять товары в нашу корзину, изменять количество товаров и видеть общую стоимость наших покупок. Это как корзина, в которой мы кладем товары, пока не решим купить их окончательно.\r\n\r\nИ еще одно приложение может быть \"Оформление заказа\". Здесь мы можем указать наш адрес доставки и подтвердить наш заказ. Это как заполнение специальной формы, чтобы магазин знал, куда доставить наши покупки.\r\n\r\nВнутри каждого приложения у нас есть файлы, которые делают разные вещи:\r\n\r\nУ \"Каталога товаров\" есть файлы, которые описывают модели товаров (как они выглядят и что имеют), представления (как мы показываем список товаров пользователю) и шаблоны HTML (как страница с товарами выглядит).\r\n\r\nУ \"Корзины покупок\" также есть файлы, которые описывают модели корзины и элементов корзины, представления для добавления/удаления товаров из корзины и шаблоны HTML для отображения корзины.\r\n\r\nУ \"Оформления заказа\" есть файлы, которые описывают модели заказов и информации о доставке, представления для оформления заказа и шаблоны HTML для отображения формы оформления заказа.\r\n\r\nВсе эти файлы работают вместе, чтобы создать полноценный интернет-магазин. Они сообщаются друг с другом и используют функции Django, чтобы обрабатывать запросы пользователей и отображать нужные страницы.\r\n\r\nТаким образом, проект Django - это целый интернет-магазин, а приложения - это его разные части, которые делают определенные задачи. Каждое приложение имеет свои файлы, которые описывают модели, представления и шаблоны, необходимые для работы этой части магазина.\r\n\r\nОт запроса до отрисовки страницы\r\nВот основные этапы и внутренние действия, которые происходят при обработке запроса и отрисовке страницы в Django:\r\n\r\nПользователь открывает браузер и вводит адрес веб-сайта (URL) в строке поиска.\r\n\r\nБраузер отправляет запрос на сервер, где расположен веб-сайт.\r\n\r\nСервер получает этот запрос и передает его в Django.\r\n\r\nDjango получает запрос и смотрит на URL, чтобы понять, какая страница должна быть показана.\r\n\r\nDjango проверяет файл urls.pyв своей структуре проекта, чтобы найти соответствующий URL-шаблон для этой страницы.\r\n\r\nКогда Django находит соответствующий URL-шаблон, он вызывает соответствующую функцию представления (view function).\r\n\r\nФункция представления обрабатывает запрос и выполняет все необходимые действия, такие как получение данных из базы данных или выполнение бизнес-логики.\r\n\r\nЕсли данные нужны для отображения страницы, Django может использовать модели данных и базу данных для извлечения этих данных.\r\n\r\nДалее Django использует шаблон HTML, который соответствует этой странице, чтобы создать окончательную HTML-страницу.\r\n\r\nDjango заполняет шаблон данными, которые были получены из базы данных или обработаны функцией представления.\r\n\r\nОкончательная HTML-страница готова и возвращается обратно на сервер.\r\n\r\nСервер отправляет эту HTML-страницу обратно в браузер пользователя.\r\n\r\nБраузер получает HTML-страницу и начинает ее отображать, показывая пользователю содержимое страницы, такое как текст, изображения и ссылки.\r\n\r\nВот таким образом происходит процесс от запроса до отрисовки страницы в Django!\r\n\r\nСтруктура стандартного простого проекта\r\nВот пример структуры файлов интернет-магазина в Django:\r\n\r\nmyshop/\r\n├── manage.py\r\n├── myshop/\r\n│   ├── __init__.py\r\n│   ├── settings.py\r\n│   ├── urls.py\r\n│   └── wsgi.py\r\n├── catalog/\r\n│   ├── migrations/\r\n│   ├── __init__.py\r\n│   ├── admin.py\r\n│   ├── models.py\r\n│   ├── views.py\r\n│   └── templates/\r\n│       └── catalog/\r\n│           ├── product_list.html\r\n│           └── product_detail.html\r\n├── cart/\r\n│   ├── __init__.py\r\n│   ├── models.py\r\n│   ├── views.py\r\n│   └── templates/\r\n│       └── cart/\r\n│           └── cart.html\r\n└── checkout/\r\n    ├── __init__.py\r\n    ├── models.py\r\n    ├── views.py\r\n    └── templates/\r\n        └── checkout/\r\n            └── order_confirmation.html\r\nТеперь давай объясню, за что отвечает каждый файл:\r\n\r\nmanage.py: Это скрипт для управления Django проектом. Он позволяет выполнять различные команды, такие как запуск сервера или выполнение миграций базы данных.\r\n\r\nmyshop/ (каталог): Это основной каталог проекта Django.\r\n\r\n__init__.py: Пустой файл, который указывает на то, что эта директория является пакетом Python.\r\n\r\nsettings.py: Файл настроек проекта, содержащий информацию о базе данных, статических файлах, шаблонах и других параметрах.\r\n\r\nurls.py: Файл URL‑маршрутов проекта, определяющий, какие представления (views) будут обрабатывать запросы для каждого URL‑адреса.\r\n\r\nwsgi.py: Файл для настройки WSGI‑совместимого сервера (Web Server Gateway Interface), который позволяет запускать Django приложение на веб‑сервере.\r\n\r\ncatalog/: Приложение «Каталог товаров».\r\n\r\nmigrations/: Директория, содержащая миграции базы данных, которые определяют структуру таблиц и схемы данных.\r\n\r\n__init__.py: Пустой файл, указывающий на то, что эта директория является пакетом Python.\r\n\r\nadmin.py: Файл, определяющий административный интерфейс для управления товарами.\r\n\r\nmodels.py: Файл, содержащий модели данных, такие как классы для товаров или категорий.\r\n\r\nviews.py: Файл, содержащий представления (views) для отображения страниц с товарами.\r\n\r\ntemplates/: Директория, содержащая HTML‑шаблоны для визуального оформления страниц.\r\n\r\ncart/: Приложение «Корзина покупок».\r\n\r\n__init__.py: Пустой файл, указывающий на то, что эта директория является пакетом Python.\r\n\r\nmodels.py: Файл, содержащий модели данных, такие как классы для корзины покупок или элементов корзины.\r\n\r\nviews.py: Файл, содержащий представления (views) для добавления товаров в корзину, изменения количества и оформления заказа.\r\n\r\ntemplates/: Директория, содержащая HTML‑шаблоны для визуального оформления страниц корзины.\r\n\r\ncheckout/: Приложение «Оформление заказа» (продолжение).\r\n\r\nmodels.py: Файл, содержащий модели данных, такие как классы для заказов или информации о доставке.\r\n\r\nviews.py: Файл, содержащий представления (views) для оформления заказа и подтверждения заказа.\r\n\r\ntemplates/: Директория, содержащая HTML‑шаблоны для визуального оформления страниц оформления заказа.\r\n\r\nЭто лишь пример структуры интернет-магазина в Django, и в реальном проекте может быть больше файлов и каталогов, в зависимости от функциональности сайта.",
+    "created": "2024-06-07T19:42:13.680Z",
+    "updated": "2024-06-08T08:53:18.912Z",
+    "publish": "2024-06-07T19:42:13Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 117,
+  "fields": {
+    "title": "Как быстро написать API на FastAPI с валидацией и базой данных",
+    "slug": "kak-bystro-napisat-api-na-fastapi-s-validatsiei-i-bazoi-dannykh",
+    "body": "Все веб-запросы обрабатываются на сервере — это хорошо всем известно. Но бывает, когда нужно написать специальный программный интерфейс, так называемый API, через который пользователи смогут централизованно получать данные и вносить изменения, например, в свой профиль.\r\n\r\nВ этой статье мы разработаем простой API с помощью самого популярного стека и FastAPI. Рассмотрим важные концепции в работе с этим фреймворком, набросаем базовую структуру проекта и развернем приложение на облачном сервере. Подробности под катом!\r\n\r\nИспользуйте навигацию, если не хотите читать текст полностью:\r\n\r\n→ Подготовка окружения\r\n→ Первые наброски\r\n→ Валидация данных с Pydantic\r\n→ Работа с базой данных\r\n→ Паттерн «Репозиторий»\r\n→ Роутер\r\n→ Деплой проекта на облачный сервер\r\n→ Заключение\r\n\r\nПодготовка окружения\r\n\r\nПервым делом стоит создать виртуальное окружение для нашего проекта, в которое мы установим необходимые зависимости. В зависимости от операционной системы и способа установки Python может сработать одна из следующих команд:\r\n\r\npython -m venv venv\r\npython3 -m venv venv\r\npy -m venv venv\r\n\r\nУстановка библиотек\r\n\r\nПредлагаю сразу установить необходимые библиотеки с помощью следующей команды:\r\n\r\npip install fastapi uvicorn pydantic aiosqlite sqlalchemy\r\n\r\nЕсли у вас возникли конфликты версий библиотек, обратитесь к их документации или к паку версий, использующемся в проекте:\r\n\r\naiosqlite==0.19.0\r\nfastapi==0.109.0\r\npydantic==2.5.3\r\nSQLAlchemy==2.0.25\r\nuvicorn==0.25.0\r\n\r\nРассмотрим вкратце их предназначение.\r\n\r\nFastAPI — это популярный асинхронный фреймворк, позволяющий быстро писать API.\r\nPydantic — это быстрая и обширная библиотека для валидации и сериализации данных. Она входит в список основных зависимостей FastAPI, так как они тесно связаны друг с другом.\r\nUvicorn — библиотека, позволяющая запустить свой собственный веб-сервер.\r\nSQLAlchemy — самая известная библиотека для работы с реляционными базами данных через Python.\r\nAiosqlite — асинхронный драйвер для работы легковесной базы данных SQLite, которую можно создать и распространять как обычный файл.\r\n\r\n\r\nПервые наброски\r\n\r\nОсновной файл, через который будет запускаться наше приложение, — это main.py. Его нужно создать в корне той директории, где вы разрабатываете.\r\n\r\nПроверим, что все работает корректно. Для этого создадим простейшее приложение на FastAPI с одним эндпоинтом (его также называют «ручкой» или «роутером»):\r\n\r\nfrom fastapi import FastAPI\r\napp = FastAPI()\r\n@app.get(\"/\")\r\nasync def home():\r\n   return {\"data\": \"Hello World\"}\r\n\r\nИ запустим веб-сервер Uvicorn:\r\n\r\nuvicorn main:app --reload\r\n\r\nОбращаем внимание, что мы обязательно должны указать расположение переменной app для запуска приложения, а также флаг --reload, чтобы внесенные изменения тут же обновляли веб-сервер до последних версий кода.\r\n\r\nТеперь, если перейти в браузере по адресу http://127.0.0.1:8000 или http://localhost:8000, мы увидим ответ веб-сервера: {«data»: «Hello World»}.\r\n\r\nРабота Uvicorn в связке с FastAPI выглядит следующим образом:\r\n\r\nнаш запрос поступает в Uvicorn;\r\nUvicorn передает этот запрос в FastAPI;\r\nFastAPI запускает код, который мы написали, и возвращает ответ Uvicorn-у: return {«data»: «Hello World»};\r\nUvicorn возвращает ответ нам.\r\n\r\nЕсли зайти по адресу http://localhost:8000/docs, то мы увидим удобный интерфейс для тестирования наших эндпоинтов.\r\n\r\n\r\n\r\nЕсли запустить наш запрос здесь, мы увидим тот же ответ: {«data»: «Hello World»}.\r\n\r\nВалидация данных с Pydantic\r\n\r\nPydantic дает возможность валидировать данные через аннотации типов в Python. Давайте создадим простейшую схему для добавления новой задачи:\r\n\r\nfrom pydantic import BaseModel\r\n\r\nclass STaskAdd(BaseModel):\r\n   name: str\r\n   description: str | None = None\r\n\r\n@app.post(\"/\")\r\nasync def add_task(task: STaskAdd):\r\n   return {\"data\": task}\r\n\r\nВ будущем нам пригодится схема для чтения задач из базы данных, у которой дополнительно будет параметр id (первичный ключ в таблице). Пропишем схему для чтения:\r\n\r\nclass STask(STaskAdd):\r\n   id: int\r\n   model_config = ConfigDict(from_attributes=True)\r\n\r\nОбратите внимание, что мы наследуемся не от BaseModel, а от только что созданной схемы STaskAdd. В таком случае мы наследуем поля name и description и нам остается добавить только id. Мы также задаем атрибут model_config, о котором поговорим позже в разделе Репозиторий.\r\n\r\nСохраним файл, перейдем в документацию по адресу http://localhost:8000/docs:\r\n\r\n\r\n\r\nВвод данных в эндпоинте.\r\n\r\nЕсли нажать Try it out в правом верхнем углу, то нам предложат вручную отредактировать json, что не очень удобно. К тому же сложно понять, какие из полей являются обязательными. Чтобы улучшить опыт работы с документацией API, давайте изменим эндпоинт с добавлением задачи на следующее:\r\n\r\nfrom fastapi import Depends\r\n\r\n@app.post(\"/\")\r\nasync def add_task(task: STaskAdd = Depends()):\r\n   return {\"data\": task}\r\n\r\nВ данной статье мы не будем разбирать особенности работы Depends, так как это продвинутая тема, требующая углубленного изучения. Сейчас достаточно убедиться, что вид эндпоинта в доке значительно улучшился.\r\n\r\nВидим, что появилась понятная пометка для обязательного поля и его можно удобно заполнить в выделенной области:\r\n\r\n\r\n\r\n\r\n\r\n\r\nРабота с базой данных\r\n\r\nSQLAlchemy — это мощная библиотека для работы с реляционными базами данных. Она учитывает максимальное количество особенностей и нюансов различных СУБД. Мы будем работать с асинхронной версией SQLAlchemy и базой данных SQLite. Для начала давайте создадим файл database.py рядом с файлом main.py и вставим следующий код:\r\n\r\nfrom datetime import datetime\r\nfrom sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine\r\n\r\nengine = create_async_engine(\"sqlite+aiosqlite:///tasks.db\")\r\nnew_session = async_sessionmaker(engine, expire_on_commit=False)\r\n\r\nЗдесь мы создаем асинхронное подключение, которое будет отвечать за отправку запросов в базу данных engine. Обратите внимание, что мы говорим SQLAlchemy, что будем использовать драйвер для асинхронного кода aiosqlite. После создания engine, с которым уже можно работать, мы дополнительно создаем фабрику сессий new_session. Сессия позволяет работать не с обычными списками и словарями, а с моделями данных, которые создаются через классы. Давайте создадим модель задач:\r\n\r\nfrom sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column\r\n\r\nclass Model(DeclarativeBase):\r\n   pass\r\n\r\nclass TaskOrm(Model):\r\n   __tablename__ = \"tasks\"\r\n   id: Mapped[int] = mapped_column(primary_key=True)\r\n   name: Mapped[str]\r\n   description: Mapped[str | None]\r\n\r\nДля создания моделей нам всегда нужен класс, от которого мы будем наследоваться. В нашем случае «родительским» классом является DeclarativeBase. Модель соответствует одной таблице в базе данных. Название таблицы мы задаем в атрибуте __tablename__. В базах данных каждая таблица обычно имеет столбец с уникальными значениями с названием id.\r\n\r\nSQLAlchemy, как и Pydantic, использует аннотации типов для задания категорий столбцов. Модель TaskOrm полностью описывает таблицу внутри базы данных, задает первичные и внешние ключи, индексы, ограничения и т. п.\r\n\r\nЧтобы таблица была создана внутри базы данных SQLite, необходимо добавить следующие функции в файл database.py:\r\n\r\nasync def create_tables():\r\n    async with engine.begin() as conn:\r\n       await conn.run_sync(Model.metadata.create_all)\r\nasync def delete_tables():\r\n   async with engine.begin() as conn:\r\n       await conn.run_sync(Model.metadata.drop_all)\r\n\r\nЭти функции отвечают за создание и удаление таблиц в базе данных.\r\n\r\nДавайте рассмотрим работу жизненного цикла приложения FastAPI и научимся создавать таблицу при запуске приложения и удалять при выключении. Для этого в файле main.py напишем функцию lifespan. При создании переменной app внутри FastAPI(...) зададим параметр lifespan со значением lifespan:\r\n\r\nfrom contextlib import asynccontextmanager\r\nfrom fastapi import FastAPI\r\nfrom database import create_tables, delete_tables\r\n\r\n@asynccontextmanager\r\nasync def lifespan(app: FastAPI):\r\n   await create_tables()\r\n   print(\"База готова\")\r\n   yield\r\n   await delete_tables()\r\n   print(\"База очищена\")\r\n\r\napp = FastAPI(lifespan=lifespan)\r\n\r\nЕсли у вас запущен Uvicorn с параметром --reload, то после сохранения файла main.py вы должны увидеть в терминале фразу «База готова». Это значит, что функция успешно запустила весь код до оператора yield. Код после него будет запущен при выключении Uvicorn, если вы нажмете комбинацию клавиш CTRL + C.\r\n\r\nЗапросы к базе данных\r\n\r\nДля создания запросов к базе данных мы будем использовать SQLAlchemy Object Relational Mapper (объектно-реляционное отображение, ORM), который позволяет оперировать экземплярами классов как реальными строками из базы данных.\r\n\r\nСоздадим файл repository.py с простой функцией для добавления задачи:\r\n\r\nfrom database import TaskOrm, new_session\r\n\r\nasync def add_task(data: dict) -> int:\r\n   async with new_session() as session:\r\n       new_task = TaskOrm(**data)\r\n       session.add(new_task)\r\n       await session.flush()\r\n       await session.commit()\r\n       return new_task.id\r\n\r\nФункция использует фабрику сессий new_session и модель TaskOrm, чтобы добавить в таблицу tasks новую строку. Обратите внимание, что мы используем асинхронный контекстный менеджер async with new_session() as session, который позволяет автоматически закрывать сессию при выходе из менеджера, чтобы нам не приходилось каждый раз закрывать сессию вручную через session.close().\r\n\r\nСтрока new_task = TaskOrm(**data) создает новую строку, но пока хранит ее только внутри нашего FastAPI приложения — база данных еще ничего не знает про нее. Строка session.add(new_task) позволяет добавить новую строку в объект сессии, чтобы SQLAlchemy знала, какие изменения нужно будет отправлять в базу данных, однако по-прежнему мы ничего не сообщили базе данных о новой задаче.\r\n\r\nСтрока await session.flush() отправляет в базу данных SQL запрос вида INSERT INTO tasks (name, description) VALUES (‘Jack’, NULL) RETURNING id, но еще не завершает транзакцию, то есть изменения все еще не находятся внутри базы данных. Функция flush позволяет получить значение столбца id новой задачи, которое мы отдаем в конце функции.\r\n\r\nТак как мы хотим, чтобы изменения оказались в базе данных, в конце мы пишем код await session.commit(), который оставляет/коммитит изменения в базе данных, завершая транзакцию.\r\n\r\nЗаметьте, что любой код, который не выполняется асинхронно, не взаимодействует с базой данных, а все асинхронные операции отправляют запросы в базу. Помните об этом, когда будете работать с объектом сессии.\r\n\r\nПосле того, как мы добавим задачу, мы, скорее всего, захотим получить список всех задач. Для этого создадим еще одну функцию:\r\n\r\nasync def get_tasks():\r\n   async with new_session() as session:\r\n       query = select(TaskOrm)\r\n       result = await session.execute(query)\r\n       task_models = result.scalars().all()\r\n       return task_models \r\n\r\nЗдесь мы пишем простейший запрос типа SELECT, который отдаст нам все строки из базы данных. Учитывая, что мы просим выбрать все объекты класса TaskOrm, SQLAlchemy конвертирует ответ от базы данных к экземплярам модели TaskOrm. Обратите внимание, что полученный ответ result — это итератор, по которому нужно пройтись и выбрать все нужные результаты. Для этого мы вводим следующую команду:\r\n\r\nresult.scalars().all().\r\n\r\nБольше про работу с SQLAlchemy можно узнать в этом плейлисте.\r\n\r\nПаттерн «Репозиторий»\r\n\r\nОбе функции обращаются к таблице tasks, поэтому будет логично объединить их в один класс. Такие классы, которые взаимодействуют с определенной таблицей и отвечают за функции добавления, изменения, выборки и удаления строк, называют репозиториями, так как они используют соответствующий паттерн.\r\n\r\nДавайте создадим наш первый класс репозиторий, а заодно добавим конвертацию полученных данных в Pydantic-схемы:\r\n\r\nfrom sqlalchemy import select\r\nfrom database import TaskOrm, new_session\r\nfrom schemas import STaskAdd, STask\r\n\r\nclass TaskRepository:\r\n   @classmethod\r\n   async def add_task(cls, task: STaskAdd) -> int:\r\n       async with new_session() as session:\r\n           data = task.model_dump()\r\n           new_task = TaskOrm(**data)\r\n           session.add(new_task)\r\n           await session.flush()\r\n           await session.commit()\r\n           return new_task.id\r\n\r\n   @classmethod\r\n   async def get_tasks(cls) -> list[STask]:\r\n       async with new_session() as session:\r\n           query = select(TaskOrm)\r\n           result = await session.execute(query)\r\n           task_models = result.scalars().all()\r\n           tasks = [STask.model_validate(task_model) for task_model in task_models]\r\n           return tasks\r\n\r\nТеперь при добавлении задачи мы принимаем не случайный словарь, а Pydantic-схему, затем преобразуя ее в словарь при помощи data = task.model_dump(). Также, при отдаче всех задач мы предварительно конвертируем их в Pydantic-cхему STask.\r\n\r\nРоутер\r\n\r\nОстался последний шаг — создать роутер и добавить в него эндпоинты. Роутер — это сущность FastAPI, позволяющая создавать приложения с одним эндпоинтом не только в одном файле main.py, а во множестве. Таким образом, структура проекта будет легко читаема.\r\n\r\nСоздадим файл router.py и объявим в нем роутер для задач, «тасок»:\r\n\r\nfrom fastapi import APIRouter\r\n\r\nrouter = APIRouter(\r\n   prefix=\"/tasks\",\r\n   tags=[\"Таски\"],\r\n)\r\n\r\nКаждый эндпоинт будет иметь префикс /tasks, а также в документации по адресу /docs будет указан тег задачи. Теперь давайте добавим два эндпоинта: для добавления одной задачи и получения всех:\r\n\r\nfrom repository import TaskRepository\r\nfrom schemas import STask, STaskAdd, STaskId\r\n\r\n@router.post(\"\")\r\nasync def add_task(task: STaskAdd = Depends()) -> STaskId:\r\n   new_task_id = await TaskRepository.add_task(task)\r\n   return {\"id\": new_task_id}\r\n\r\n@router.get(\"\")\r\nasync def get_tasks() -> list[STask]:\r\n   tasks = await TaskRepository.get_tasks()\r\n   return tasks\r\n\r\nТакже давайте создадим отдельную схему STaskId, которая будет отображать возвращаемый ответ функции add_task:\r\n\r\nclass STaskId(BaseModel):\r\n   id: int\r\n\r\nЧтобы включить данный роутер в наше приложение, достаточно в файле main.py импортировать файл router.py и добавить роутер с помощью метода include_router:\r\n\r\nfrom router import router as tasks_router\r\n\r\napp = FastAPI(lifespan=lifespan)\r\napp.include_router(tasks_router)\r\n\r\nВ файле router.py мы используем созданный ранее репозиторий, аннотации типов и возвращаемый тип функций. Это позволяет нам добавить валидацию возвращаемых клиенту данных и улучшить документацию к API:\r\n\r\n\r\n\r\nТак выглядит «ручка» GET /tasks:\r\n\r\n\r\n\r\nГотово! Мы задали базовую структуру проекта и теперь можем перейти на следующий этап — его развертыванию на реальном сервере.\r\n\r\nДеплой проекта на облачный сервер\r\n\r\nПодготовка\r\n\r\nПеред началом давайте создадим файл со всеми зависимостями, которые используются в проекте. Делается это с помощью команды  pip freeze > requirements.txt. У меня получился следующий файл:\r\n\r\naiosqlite==0.19.0\r\nannotated-types==0.6.0\r\nanyio==4.2.0\r\nclick==8.1.7\r\ncolorama==0.4.6\r\nfastapi==0.109.0\r\ngreenlet==3.0.3\r\nh11==0.14.0\r\nidna==3.6\r\npydantic==2.5.3\r\npydantic_core==2.14.6\r\nsniffio==1.3.0\r\nSQLAlchemy==2.0.25\r\nstarlette==0.35.1\r\ntyping_extensions==4.9.0\r\nuvicorn==0.25.0\r\n\r\nОбычно развертывание приложений и сервисов на сервере происходит при помощи Docker. Для создания образа нашего приложения нам понадобится создать Dockerfile:\r\n\r\nFROM python:3.11-slim\r\nCOPY . .\r\nRUN pip install -r requirements.txt\r\nCMD [\"uvicorn\", \"main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"80\"]\r\n\r\nДля запуска приложения нам нужно установить Python 3.11. Командой COPY перемещаем все файлы из текущего проекта в собираемый Docker-образ. Далее — устанавливаем все зависимости. В конце Dockerfile необходимо указать CMD и команду, которая будет запущена при старте контейнера. Напомню, что образ не запускает приложение, а лишь хранит информацию о всех папках и зависимостях, а вот контейнер — это запущенный образ.\r\n\r\nПомимо Dockerfile добавим файл .dockerignore, чтобы в образе не оказалось папки с зависимостями самого Dockerfile:\r\n\r\nvenv\r\nDockerfile\r\n\r\nДалее создадим файл .gitignore и GitHub-репозиторий:\r\n\r\n__pycache__\r\nvenv\r\n\r\ngit init\r\ngit add .\r\ngit commit -m \"initial commit\"\r\ngit remote add origin REPO_URL\r\ngit push -u origin main\r\n\r\nЗагрузка проекта\r\n\r\nПереходим в раздел Облачная платформа внутри панели управления и нажимаем Создать сервер:\r\n\r\n\r\n\r\nДля работы нашего приложения будет достаточно одного ядра vCPU с долей 10% и 512 МБ оперативной памяти.\r\n\r\n\r\n\r\n\r\n\r\nОтлично — сервер готов. Теперь можем перенести проект. Сперва установим необходимые зависимости: git и Docker. Инструкция взята с официального сайта:\r\n\r\nsudo apt-get update\r\nsudo apt-get install git\r\nsudo apt-get update\r\nsudo apt-get install ca-certificates curl gnupg\r\nsudo install -m 0755 -d /etc/apt/keyrings\r\ncurl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg\r\nsudo chmod a+r /etc/apt/keyrings/docker.gpg\r\necho \\\r\n \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \\\r\n $(. /etc/os-release && echo \"$VERSION_CODENAME\") stable\" | \\\r\n sudo tee /etc/apt/sources.list.d/docker.list > /dev/null\r\nsudo apt-get update\r\nsudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin\r\n\r\nПосле установки git и Docker необходимо клонировать созданный ранее репозиторий:\r\n\r\ngit clone REPO_URL.git\r\n\r\nМы можем также использовать готовый репозиторий с помощью команды:\r\n\r\ngit clone https://github.com/artemonsh/fastapi_beginner_course.git\r\n\r\nПосле клонирования проекта необходимо перейти в папку с проектом:\r\n\r\ncd <название_папки>\r\n\r\nИ запустить команду для сборки образа fastapi_app и запуска контейнера на порту 80:\r\n\r\ndocker build . --tag fastapi_app && docker run -p 80:80 fastapi_app\r\n\r\nПоздравляю! Теперь ваше приложение доступно по IP-адресу сервера, на него могут зайти другие пользователи и использовать ваши API.\r\n\r\nЗаключение\r\n\r\nМы научились реализовывать простейшее API на базе FastAPI, создавать базу и таблицы внутри нее при помощи SQLAlchemy, описывать схемы данных и валидировать их при помощи Pydantic. Полученные знания являются фундаментом для построения более сложных приложений.",
+    "created": "2024-06-07T19:43:28.024Z",
+    "updated": "2024-06-09T22:16:23.930Z",
+    "publish": "2024-06-07T19:43:28Z",
+    "author": 1,
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 144,
+  "fields": {
+    "title": "fds",
+    "slug": "fds",
+    "body": "fsd",
+    "created": "2024-06-11T16:29:12.881Z",
+    "updated": "2024-06-11T16:29:12.881Z",
+    "publish": "2024-06-11T16:29:12.880Z",
+    "author": 1,
+    "status": "DF"
   }
 },
 {
   "model": "blog.comment",
-  "pk": 16,
+  "pk": 60,
   "fields": {
     "author": 1,
-    "article": 13,
-    "body": "asdffsdfds",
-    "created": "2024-05-06T11:43:15.259Z",
-    "updated": "2024-05-06T11:43:15.259Z",
-    "active": true
+    "article": 113,
+    "body": "Ух ты!!!!!!!!!!!!!!!!",
+    "created": "2024-06-07T19:23:08.576Z",
+    "updated": "2024-06-07T19:23:08.576Z"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 61,
+  "fields": {
+    "author": 1,
+    "article": 113,
+    "body": "Автор накрутил просмотры...",
+    "created": "2024-06-07T19:23:48.110Z",
+    "updated": "2024-06-07T19:23:48.110Z"
   }
 },
 {
   "model": "taggit.tag",
   "pk": 1,
-  "fields": {
-    "name": "Smart",
-    "slug": "smart"
-  }
-},
-{
-  "model": "taggit.tag",
-  "pk": 2,
-  "fields": {
-    "name": "jazz",
-    "slug": "jazz"
-  }
-},
-{
-  "model": "taggit.tag",
-  "pk": 3,
   "fields": {
     "name": "music",
     "slug": "music"
@@ -1001,44 +3591,218 @@
 },
 {
   "model": "taggit.tag",
-  "pk": 4,
+  "pk": 7,
   "fields": {
-    "name": "hope",
-    "slug": "hope"
+    "name": "news",
+    "slug": "news"
   }
 },
 {
   "model": "taggit.tag",
-  "pk": 5,
+  "pk": 8,
   "fields": {
-    "name": "dddddd",
-    "slug": "dddddd"
+    "name": "programming",
+    "slug": "programming"
   }
 },
 {
   "model": "taggit.tag",
-  "pk": 6,
+  "pk": 9,
   "fields": {
-    "name": "administrator",
-    "slug": "administrator"
+    "name": "design",
+    "slug": "design"
   }
 },
 {
-  "model": "taggit.taggeditem",
+  "model": "taggit.tag",
   "pk": 10,
   "fields": {
-    "tag": 3,
-    "content_type": 7,
-    "object_id": 11
+    "name": "management",
+    "slug": "management"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "markdown",
+    "slug": "markdown"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 12,
+  "fields": {
+    "name": "os",
+    "slug": "os"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 18,
+  "fields": {
+    "name": "python",
+    "slug": "python"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 19,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 20,
+  "fields": {
+    "name": "fast-api",
+    "slug": "fast-api"
   }
 },
 {
   "model": "taggit.taggeditem",
-  "pk": 12,
+  "pk": 29,
   "fields": {
-    "tag": 6,
+    "tag": 11,
     "content_type": 7,
-    "object_id": 13
+    "object_id": 111
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 34,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 116
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 35,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 115
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 36,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 113
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 37,
+  "fields": {
+    "tag": 12,
+    "content_type": 7,
+    "object_id": 112
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 38,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 110
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 39,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 104
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 40,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 103
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 41,
+  "fields": {
+    "tag": 10,
+    "content_type": 7,
+    "object_id": 102
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 42,
+  "fields": {
+    "tag": 9,
+    "content_type": 7,
+    "object_id": 101
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 43,
+  "fields": {
+    "tag": 7,
+    "content_type": 7,
+    "object_id": 100
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 60,
+  "fields": {
+    "tag": 20,
+    "content_type": 7,
+    "object_id": 117
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 63,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 117
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 64,
+  "fields": {
+    "tag": 9,
+    "content_type": 7,
+    "object_id": 117
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 79,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 144
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 80,
+  "fields": {
+    "tag": 7,
+    "content_type": 7,
+    "object_id": 144
   }
 },
 {
@@ -1047,6 +3811,84 @@
   "fields": {
     "domain": "localhost:8000",
     "name": "localhost:8000"
+  }
+},
+{
+  "model": "social_django.usersocialauth",
+  "pk": 6,
+  "fields": {
+    "user": 36,
+    "provider": "google-oauth2",
+    "uid": "danikblon1@gmail.com",
+    "extra_data": "{\"auth_time\": 1717967385, \"expires\": 3599, \"token_type\": \"Bearer\", \"access_token\": \"ya29.a0AXooCgs8NHQqwfcukY99MOmwxf_vAUGz8U2Dcj6svA-itBGmR1Ns9XmX55WNa3___iSymSYfB2vhMma_mVMUYl4ZN87pk2VZnd_B239iuuUicGLk267l-XrQ9HAWwFRtqT5W_C9UHbg5M9UXGMXO6XF9B89zdTJCsPxqaCgYKAQsSARISFQHGX2MiJsU-xFyBqoKIvK4WyJEHnw0171\"}",
+    "created": "2024-06-09T21:09:45.615Z",
+    "modified": "2024-06-09T21:09:45.628Z"
+  }
+},
+{
+  "model": "redisboard.redisserver",
+  "pk": 1,
+  "fields": {
+    "label": "Redis",
+    "url": "redis://localhost:6379/0",
+    "password": null
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "users/2024/05/14/Снимок_экрана_2024-05-13_155156_xFyN0br.png",
+    "modified": "2024-06-10T15:41:58.510Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "users/2024/06/10/varlamov-kloun-1.webp",
+    "modified": "2024-06-10T15:44:27.227Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "users/default.png",
+    "modified": "2024-06-10T17:12:50.754Z"
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "users/2024/05/14\\Снимок_экрана_2024-05-13_155156_xFyN0br.png.200x200_q85_crop-center.png",
+    "modified": "2024-06-10T15:41:58.527Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "users/2024/06/10\\varlamov-kloun-1.webp.200x200_q85_crop-center.jpg",
+    "modified": "2024-06-10T15:44:27.241Z",
+    "source": 2
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "users\\default.png.200x200_q85_crop-center.png",
+    "modified": "2024-06-10T17:12:50.772Z",
+    "source": 3
   }
 }
 ]

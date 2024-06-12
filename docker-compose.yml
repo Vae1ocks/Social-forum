@@ -1,0 +1,60 @@
+services:
+
+  db:
+    image: postgres:15.6
+    restart: always
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  
+  rabbitmq:
+    image: rabbitmq:3.13.1-management
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+      
+  redis:
+    image: redis:7.0.4
+    restart: always
+    volumes:
+      - ./data/redis:/data
+    ports:
+      - "6379:6379"
+    
+  worker:
+    build: .
+    command: ['celery', '--workdir=./forum', '-A', 'forum', 'worker']
+    restart: always
+    depends_on:
+      - redis
+      - rabbitmq
+    environment:
+      - DJANGO_SETTINGS_MODULE=forum.settings.docker_run_settings
+
+  django:
+    build: .
+    restart: always
+    container_name: django
+    command: ["./wait-for-it.sh", "db:5432", "--",
+              "python", "/app/forum/manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=forum.settings.docker_run_settings
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      - db
+      - redis
+      - rabbitmq
+      - worker
