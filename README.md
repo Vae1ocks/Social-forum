@@ -2,7 +2,9 @@
 
 Вы можете запустить проект 2 способами:
 
-А): через докер. Тогда docker compose up
+А): через докер. Тогда **docker compose up**
+
+
 
 Б): через py manage.py runserver (перед этим понадобится создать базу данных, как указано в параметрах settings/runserver_settings):
 
