@@ -4,17 +4,7 @@
 
 А): через докер. Тогда **docker compose up**
 
-Вероятно, произойдёт ошибка, тогда рекомендую удалить данный каталог: ***Social-forum\data\db***
 
-После удаления данного каталога:
-
-**docker exec django python /app/forum/manage.py migrate**
-
-**docker exec django python /app/forum/manage.py loaddata /app/forum/mysite_data.json**
-
-И перезагрузить контейнеры
-
-После выполнения этих шагов всё должно работать нормально
 
 Б): через py manage.py runserver (перед этим понадобится создать базу данных, как указано в параметрах settings/runserver_settings):
 
