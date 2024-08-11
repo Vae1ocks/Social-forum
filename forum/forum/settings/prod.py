@@ -1,6 +1,11 @@
 import os
 from .base import *
 
+
+DEBUG = False
+
+ALLOWED_HOSTS = ['62.217.180.165']
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',

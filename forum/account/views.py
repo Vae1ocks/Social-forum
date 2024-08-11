@@ -145,7 +145,8 @@ class OldEmailConfirmationView(LoginRequiredMixin, FormView):
     def form_invalid(self, form):
         messages.error(self.request, _('Confirmation code is not valid'))
         return super().form_invalid(form)
-    
+
+
 class NewEmailEnterView(FormView):
     form_class = NewEmailForm
     success_url = reverse_lazy('account:new_email_confirmation')
@@ -169,7 +170,8 @@ class NewEmailEnterView(FormView):
         body = _(f'Here is your code to confirm your new email: {confirmation_code}')
         confirmation_code_create(title=title, body=body, email=form.cleaned_data['email'])
         return super().form_valid(form)
-    
+
+
 class NewEmailConfirmation(FormView):
     form_class = ConfirmationCodeForm
     template_name = 'registration/email_code_confirmation.html'
