@@ -7,7 +7,11 @@
 
 Вы можете запустить проект 2 способами:
 
-А): через докер. Тогда **docker compose up**
+А): через докер.
+  **docker compose up**
+  docker exec -it {Тут id контейнера django, того, что за проект отвечает}
+  python manage.py loaddata mysite_data.json
+
 
 
 
