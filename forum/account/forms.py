@@ -9,7 +9,9 @@ class RegistrationForm(forms.ModelForm):
 
     class Meta:
         model = get_user_model()
-        fields = ['avatar', 'username', 'first_name', 'last_name', 'email', 'about_self']
+        fields = ['avatar', 'username',
+                  'first_name', 'last_name',
+                  'email', 'about_self']
 
     def password_validation(self):
         cd = self.cleaned_data

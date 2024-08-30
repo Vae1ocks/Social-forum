@@ -1,17 +1,20 @@
 from django.http import Http404
-from blog.models import Article, Comment
 from django.contrib.auth import get_user_model
-from rest_framework import generics
 from django.db.models import Q
-from . import serializers
 from django.contrib.auth import get_user_model
-from rest_framework.permissions import IsAuthenticated
-from .permissions import IsAuthor
 from django.utils import timezone
 from django.utils.text import slugify
-from unidecode import unidecode
 from django.views.decorators.cache import cache_page
 from django.utils.decorators import method_decorator
+
+from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
+
+from . import serializers
+from .permissions import IsAuthor
+from blog.models import Article, Comment
+
+from unidecode import unidecode
 
 
 @method_decorator(cache_page(60 * 15), name='dispatch')

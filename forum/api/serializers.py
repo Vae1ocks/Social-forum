@@ -6,6 +6,7 @@ from django.contrib.auth import get_user_model
 
 class CommentSerializer(serializers.ModelSerializer):
     author = serializers.ReadOnlyField(source='author.username')
+
     class Meta:
         model = Comment
         fields = ['author', 'body']
@@ -36,7 +37,6 @@ class ArticleSerializer(serializers.ModelSerializer):
         model = Article
         fields = ['id', 'author', 'title', 'slug', 'body', 'publish',
                   'updated', 'status', 'comments', 'tags']
-
 
 
 class UserSerializer(serializers.ModelSerializer):

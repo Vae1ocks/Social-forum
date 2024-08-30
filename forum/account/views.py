@@ -1,17 +1,28 @@
 from django.contrib.auth import get_user_model, login
-from django.db.models.query import QuerySet
-from django.http import Http404, HttpResponse
-from django.contrib.auth.mixins import UserPassesTestMixin
-from django.views.generic import DetailView, CreateView, TemplateView, UpdateView, FormView
 from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth.mixins import UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
+
+from django.db.models.query import QuerySet
+
+from django.http import Http404, HttpResponse
 from django.http import HttpResponseRedirect
+
+from django.views.generic import (DetailView, CreateView,
+                                  TemplateView, UpdateView,
+                                  FormView)
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
-from .forms import NewEmailForm, RegistrationForm, ConfirmationCodeForm, TokenAuthenticationForm, PasswordConfirmationForm
-from django.contrib.auth.mixins import LoginRequiredMixin
+
 from django.utils.crypto import get_random_string
 from django.conf import settings
-from django.contrib import messages
+
+
+from .forms import (NewEmailForm, RegistrationForm,
+                    ConfirmationCodeForm, TokenAuthenticationForm,
+                    PasswordConfirmationForm)
+
 from .tasks import confirmation_code_create
 import secrets
 import redis
@@ -26,6 +37,10 @@ r = redis.Redis(
 
 
 class UserDetailView(DetailView):
+    """
+    Детальная информация о пользователе.
+    """
+
     model = get_user_model()
     template_name = 'account/detail.html'
     context_object_name = 'user'
@@ -73,6 +88,12 @@ class UserEditView(UserPassesTestMixin, UpdateView):
     
 
 class RegistrationView(FormView):
+    """
+    Первый этап регистрации: ввод персональной информации:
+    аватара, имени, фамилии, ника, информации о себе
+    и пароля в двух экземплярах.
+    """
+
     form_class = RegistrationForm
     template_name = 'registration/registration.html'
     success_url = reverse_lazy('account:registration_confirmation')
@@ -81,14 +102,20 @@ class RegistrationView(FormView):
         self.request.session['registration_data'] = form.cleaned_data
         confirmation_code = random.randint(100000, 999999)
         r.set(f'user:{form.cleaned_data['username']}:confirmation_code', confirmation_code, ex=180)
+
         title = _('Finish the registration')
         body = _(f'Your confirmation code to complete the registration: {confirmation_code}')
         email = form.cleaned_data['email']
+
         confirmation_code_create(title=title, body=body, email=email)
         return super().form_valid(form)
         
 
 class RegistrationConfirmation(FormView):
+    """
+    Второй этап регистрации: подтверждение кода, отправленного на почту.
+    """
+
     form_class = ConfirmationCodeForm
     success_url = reverse_lazy('account:registration_done')
     template_name = 'registration/email_code_confirmation.html'
@@ -118,6 +145,11 @@ class RegistrationConfirmation(FormView):
     
 
 class OldEmailConfirmationView(LoginRequiredMixin, FormView):
+    """
+    Смена почты, 1 этап: подтверждение старой - ввод кода, отправленного
+    на текущую почту в результате get-запроса.
+    """
+
     form_class = ConfirmationCodeForm
     template_name = 'registration/email_code_confirmation.html'
 
@@ -125,6 +157,9 @@ class OldEmailConfirmationView(LoginRequiredMixin, FormView):
         return reverse_lazy('account:new_email_enter', args=(self.redirect_token, ))
 
     def get(self, request, *args, **kwargs):
+        """
+        Получение кода.
+        """
         confirmation_code = random.randint(100000, 999999)
         title = _('Edit your email')
         body = _(f'The confirmation code to change your email: {confirmation_code}')
@@ -133,6 +168,8 @@ class OldEmailConfirmationView(LoginRequiredMixin, FormView):
         return super().get(request, *args, **kwargs)
 
     def form_valid(self, form):
+        """ Проверка кода. """
+
         entered_code = form.cleaned_data['confirmation_code']
         expected_code = r.get(f'user:{self.request.user.id}:old_email_conf_code').decode('utf-8')
 
@@ -142,12 +179,17 @@ class OldEmailConfirmationView(LoginRequiredMixin, FormView):
             r.delete(f'user:{self.request.user.id}:old_email_conf_code')
             return super().form_valid(form)
         return self.form_invalid(form)
+
     def form_invalid(self, form):
         messages.error(self.request, _('Confirmation code is not valid'))
         return super().form_invalid(form)
 
 
 class NewEmailEnterView(FormView):
+    """
+    Смена почты, 2 этап: ввод новой почты.
+    """
+
     form_class = NewEmailForm
     success_url = reverse_lazy('account:new_email_confirmation')
     template_name = 'registration/email_enter_form.html'
@@ -173,6 +215,10 @@ class NewEmailEnterView(FormView):
 
 
 class NewEmailConfirmation(FormView):
+    """
+    Смена почты, 3 этап: ввод кода, отправленного на новую почту.
+    """
+
     form_class = ConfirmationCodeForm
     template_name = 'registration/email_code_confirmation.html'
 
@@ -180,6 +226,10 @@ class NewEmailConfirmation(FormView):
         return reverse_lazy('account:user_detail', args=(self.request.user.id, ))
     
     def form_valid(self, form):
+        """
+        Валидируем код и, в случае валидности, устанавливаем новую почту.
+        """
+
         expected_code = r.get(f'user:{self.request.user.id}:new_email_conf_code')
         entered_code = form.cleaned_data['confirmation_code']
         if self.request.session['new_email']:
@@ -197,6 +247,11 @@ class NewEmailConfirmation(FormView):
     
 
 class TokenCreateView(FormView):
+    """
+    Создание псевдотокена (по факту просто строка get_random_string)
+    для входа с использованием этого токена, т.е без пароля и логина.
+    """
+
     form_class = PasswordConfirmationForm
     template_name = 'account/password_confirmation.html'
     success_url = reverse_lazy('account:authentication_token_info')
@@ -228,12 +283,18 @@ class TokenInfoView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        authentication_token = r.get(f'user:{self.request.user.id}:authentication_token').decode('utf-8')
+        authentication_token = r.get(
+            f'user:{self.request.user.id}:authentication_token'
+        ).decode('utf-8')
         context['authentication_token'] = authentication_token
         return context
 
 
 class TokenLoginView(FormView):
+    """
+    Логин с использованием токена вместо пароля и username.
+    """
+
     form_class = TokenAuthenticationForm
     template_name = 'registration/token_login.html'
 

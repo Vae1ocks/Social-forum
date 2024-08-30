@@ -34,6 +34,10 @@ r = redis.Redis(
 
 
 class ArticleListView(ListView):
+    """
+    Список статей.
+    """
+
     model = Article
     paginate_by = 5
     template_name = 'blog/article/list.html'
@@ -51,7 +55,7 @@ class ArticleListView(ListView):
                 queryset = queryset.filter(tags__slug=tag_kwarg)
                 cache.set('queryset', queryset)
         return queryset
-        
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['all_articles'] = Article.published.count()
@@ -60,6 +64,10 @@ class ArticleListView(ListView):
 
 
 class ArticleDetailView(DetailView):
+    """
+    Детальная информация о статье.
+    """
+
     model = Article
     template_name = 'blog/article/article_detail.html'
     context_object_name = 'article'
@@ -78,11 +86,19 @@ class ArticleDetailView(DetailView):
             f'article:{context['article'].id}:same_articles'
         )
         if not articles_with_same_tags:
-            tags_ids = context['article'].tags.values_list('id', flat=True)
-            articles_with_same_tags = Article.published.filter(tags__in=tags_ids).exclude(id=context['article'].id)
-            articles_with_same_tags = articles_with_same_tags.annotate(same_tags=Count('tags'))\
-                                                        .order_by('-same_tags', '-publish')[:5]
-            cache.set(f'article:{context['article'].id}:same_articles', articles_with_same_tags)
+            tags_ids = context['article'].tags.values_list(
+                'id', flat=True
+            )
+            articles_with_same_tags = Article.published.filter(
+                tags__in=tags_ids
+            ).exclude(id=context['article'].id)
+            articles_with_same_tags = articles_with_same_tags.annotate(
+                same_tags=Count('tags')
+            ).order_by('-same_tags', '-publish')[:5]
+            cache.set(
+                f'article:{context['article'].id}:same_articles',
+                articles_with_same_tags
+            )
 
         context['comments'] = Comment.objects.filter(
             article=context['article']
@@ -90,13 +106,17 @@ class ArticleDetailView(DetailView):
         context['articles_with_same_tags'] = articles_with_same_tags
         context['form'] = CommentForm
         article_id = context['article'].id
-        user_id = self.request.user.id if self.request.user.is_authenticated else None
+        user_id = self.request.user.id if self.request.user.is_authenticated \
+            else None
 
         # if user_id:
         #     user_key = f'user:{user_id}:viewed_articles'
         #     if not r.sismember(user_key, article_id):
         #         r.incr(f'article:{article_id}:views')
         #         r.sadd(user_key, article_id)
+
+        # Добавляем просмотр в Redis, используя для идентификации
+        # конкретного пользователя его сессию.
         session_key = f'viewed_article_{article_id}'
         if not self.request.session.get(session_key, False):
             r.incr(f'article:{article_id}:views')
@@ -109,6 +129,10 @@ class ArticleDetailView(DetailView):
 @login_required
 @require_POST
 def comment_create(request, id):
+    """
+    Для создания комментария под статьёй.
+    """
+
     article = get_object_or_404(Article,
                              id=id,
                              status=Article.Status.PUBLISHED)
@@ -123,6 +147,10 @@ def comment_create(request, id):
 
 
 class ArticleSearchView(FormView):
+    """
+    Поиск по статьям с применением триграмного поиска
+    """
+
     template_name = 'blog/article/search.html'
     form_class = SearchForm
 
@@ -132,17 +160,22 @@ class ArticleSearchView(FormView):
         results = cache.get(query)
         if not results:
             if query:
-                results = Article.published.annotate(similarity=TrigramSimilarity('title', query),
-                                                    ).filter(similarity__gt=0.1).order_by('-similarity')
+                results = Article.published.annotate(
+                    similarity=TrigramSimilarity('title', query),
+                ).filter(similarity__gt=0.1).order_by('-similarity')
             else:
                 results = []
             cache.set(query, results)
         context['results'] = results
         context['query'] = query
         return context
-    
+
 
 class ArticleCreateView(LoginRequiredMixin, CreateView):
+    """
+    Создания статьи.
+    """
+
     model = Article
     fields = ['title', 'body', 'status']
     template_name = 'blog/article/article_create.html'
@@ -157,23 +190,27 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         form.instance.slug = slugify(unidecode(form.instance.title))
-        tags = self.request.POST.getlist('tags') 
+        tags = self.request.POST.getlist('tags')
         if tags:
             response = super().form_valid(form)
             for id in tags:
                 tag = Tag.objects.get(id=id)
                 if tag in Tag.objects.all():
                     form.instance.tags.add(tag)
-                else: return HttpResponseForbidden(_("You can't choose tags that are not in the list of tags"))
+                else: return HttpResponseForbidden(_(
+                    "You can't choose tags that are not in the list of tags"
+                ))
             if form.instance.status == 'PB':
-                messages.success(self.request, _('Your article has been successfully created.\
-                                                 It will be shown in the list of articles within 15 minutes '))
+                messages.success(self.request, _(
+                    '''Your article has been successfully created.
+                    It will be shown in the list of articles within 15 minutes '''
+                ))
             else:
                 messages.success(self.request, _('Your article has been created with draft status.\
                                                  Only you can see this'))
             return response
         return self.form_invalid(form, tags)
-    
+
     def form_invalid(self, form, tags):
         if not tags:
             messages.error(self.request, _('You must choose at least 1 tag'))
@@ -181,6 +218,10 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
 
 
 class ArticleEditView(UserPassesTestMixin, UpdateView):
+    """
+    Редактирование статьи.
+    """
+
     model = Article
     fields = ['title', 'body', 'status']
     template_name = 'blog/article/article_edit.html'
@@ -188,17 +229,17 @@ class ArticleEditView(UserPassesTestMixin, UpdateView):
     def test_func(self):
         article = self.get_object()
         return self.request.user == article.author
-    
+
     def handle_no_permission(self):
         raise Http404
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['tag_form'] = TagSelectionForm(
             initial={'tags': self.object.tags.values_list('id', flat=True)}
         )
         return context
-    
+
     def form_valid(self, form):
         tags = self.request.POST.getlist('tags')
         if tags:
@@ -218,7 +259,7 @@ class ArticleEditView(UserPassesTestMixin, UpdateView):
                                  Only you can see this article.')
             return super().form_valid(form)
         return self.form_invalid(form)
-    
+
     def form_invalid(self, form):
         if not hasattr(self, 'tags'):
             messages.error(self.request, _('You must choose at least 1 tag'))
@@ -226,30 +267,43 @@ class ArticleEditView(UserPassesTestMixin, UpdateView):
 
 
 class ArticleDeleteView(UserPassesTestMixin, DeleteView):
+    """
+    Удаление статьи.
+    """
+
     model = Article
     success_url = reverse_lazy('blog:article_list')
     template_name = 'blog/article/article_delete.html'
-    
+
     def test_func(self):
         article = self.get_object()
         return self.request.user == article.author
-    
+
     def handle_no_permission(self):
         raise Http404
 
+
 class CommentEditView(UserPassesTestMixin, UpdateView):
+    """
+    Редактирование комментария к статье.
+    """
+
     model = Comment
     fields = ['body']
 
     def test_func(self):
         comment = self.get_object()
         return self.request.user == comment.author
-    
+
     def handle_no_permission(self):
         raise Http404
-    
+
 
 class CommentDeleteView(UserPassesTestMixin, DeleteView):
+    """
+    Удаление комментария.
+    """
+
     model = Comment
     template_name = 'blog/article/comment_delete.html'
     pk_url_kwarg = 'comment_id'
@@ -262,10 +316,10 @@ class CommentDeleteView(UserPassesTestMixin, DeleteView):
     def test_func(self):
         comment = self.get_object()
         return self.request.user == comment.author
-    
+
     def handle_no_permission(self):
         raise Http404
-    
+
     def form_valid(self, form):
         messages.success(self.request, _('Your comment has been deleted'))
         return super().form_valid(form)

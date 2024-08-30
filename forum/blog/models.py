@@ -1,12 +1,18 @@
 from django.db import models
-from django.utils import timezone
 from django.contrib.auth import get_user_model
+
+from django.utils import timezone
 from django.urls import reverse
-from taggit.managers import TaggableManager
 from django.utils.translation import gettext_lazy as _
+
+from taggit.managers import TaggableManager
 
 
 class IsPublished(models.Manager):
+    """
+    Менеджер для отображения только опубликованных статей.
+    """
+
     def get_queryset(self):
         return super().get_queryset().filter(status=Article.Status.PUBLISHED)
 
@@ -33,7 +39,6 @@ class Article(models.Model):
                               default=Status.DRAFT)
     objects = models.Manager()
     tags = TaggableManager()
-    
 
     class Meta:
         ordering = ['-publish']
