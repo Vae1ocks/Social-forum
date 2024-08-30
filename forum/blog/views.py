@@ -1,21 +1,28 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, UpdateView, FormView, CreateView, DeleteView
-from .models import Article, Comment
+from django.views.generic import (ListView, DetailView,
+                                  UpdateView, FormView,
+                                  CreateView, DeleteView)
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from .forms import CommentForm, SearchForm, TagSelectionForm
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
+
 from django.db.models import Count
 from django.contrib.postgres.search import TrigramSimilarity
 from django.utils.text import slugify
 from django.http import Http404, HttpResponseForbidden
-from taggit.models import Tag
 from django.utils.translation import gettext_lazy as _
-from django.conf import settings
-from unidecode import unidecode
 from django.contrib import messages
 from django.core.cache import cache
+from django.conf import settings
+
+from .models import Article, Comment
+from .forms import CommentForm, SearchForm, TagSelectionForm
+
+from taggit.models import Tag
+
+from unidecode import unidecode
+
 import redis
 
 
@@ -63,31 +70,39 @@ class ArticleDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
         if context['article'].status == Article.Status.DRAFT and self.request.user != context['article'].author:
             raise Http404
-        articles_with_same_tags = cache.get(f'article:{context['article'].id}:same_articles')
+
+        articles_with_same_tags = cache.get(
+            f'article:{context['article'].id}:same_articles'
+        )
         if not articles_with_same_tags:
             tags_ids = context['article'].tags.values_list('id', flat=True)
             articles_with_same_tags = Article.published.filter(tags__in=tags_ids).exclude(id=context['article'].id)
             articles_with_same_tags = articles_with_same_tags.annotate(same_tags=Count('tags'))\
                                                         .order_by('-same_tags', '-publish')[:5]
             cache.set(f'article:{context['article'].id}:same_articles', articles_with_same_tags)
-        context['comments'] = Comment.objects.filter(article=context['article']).prefetch_related('author')
+
+        context['comments'] = Comment.objects.filter(
+            article=context['article']
+        ).prefetch_related('author')
         context['articles_with_same_tags'] = articles_with_same_tags
         context['form'] = CommentForm
         article_id = context['article'].id
         user_id = self.request.user.id if self.request.user.is_authenticated else None
-        if user_id:
-            user_key = f'user:{user_id}:viewed_articles'
-            if not r.sismember(user_key, article_id):
-                r.incr(f'article:{article_id}:views')
-                r.sadd(user_key, article_id)
-        else:
-            session_key = f'viewed_article_{article_id}'
-            if not self.request.session.get(session_key, False):
-                r.incr(f'article:{article_id}:views')
-                self.request.session[session_key] = True
+
+        # if user_id:
+        #     user_key = f'user:{user_id}:viewed_articles'
+        #     if not r.sismember(user_key, article_id):
+        #         r.incr(f'article:{article_id}:views')
+        #         r.sadd(user_key, article_id)
+        session_key = f'viewed_article_{article_id}'
+        if not self.request.session.get(session_key, False):
+            r.incr(f'article:{article_id}:views')
+            self.request.session[session_key] = True
         views = r.get(f'article:{article_id}:views')
+
         context['all_views'] = int(views)
         return context
 
